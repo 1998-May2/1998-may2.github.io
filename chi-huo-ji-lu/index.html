@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en" style="--theme-color: #262626; --link-color: #262626;">
+<head>
+  <meta charset="UTF-8">
+  <title>吃货记录 - My Blog</title>
+
+  <link rel="icon" href="">
+<!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> -->
+<link rel="alternate" type="application/atom+xml" title="My Blog - Atom Feed" href="https://98may2.xyz/atom.xml">
+
+  
+
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFCRR8Q57W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script> -->
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-182385326-1');
+    ga('set', 'dimension1', 'site/yE4bklzbb');
+    ga('set', 'dimension2', 'post/Xmvo6bOMW');
+    ga('send', 'pageview');
+    // gtag('set', {
+    //   'custom_map': {
+    //     'dimension1': 'siteId',
+    //     'dimension2': 'postId',
+    //   }
+    // })
+
+    // gtag('config', 'G-NFCRR8Q57W', {
+    //   'siteId': 'site/yE4bklzbb',
+    //   'postId': 'post/Xmvo6bOMW',
+    // });
+  </script>
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="自己记一些吃吃吃的吃后感，因为会忘记，记下来防止再次踩雷（个人口感，仅供参考）">
+
+  <meta property="og:title" content="吃货记录 - My Blog">
+  <meta property="og:description" content="自己记一些吃吃吃的吃后感，因为会忘记，记下来防止再次踩雷（个人口感，仅供参考）">
+  
+  <meta property="og:url" content="https://98may2.xyz/chi-huo-ji-lu/">
+  <meta property="og:site_name" content="My Blog">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="吃货记录">
+
+  <meta name="gridea:post_id" content="Xmvo6bOMW">
+
+  <link rel="canonical" href="https://98may2.xyz/chi-huo-ji-lu">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.0.3/styles/a11y-light.css">
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@gridea/theme@1.0.8/css/main.css">
+
+</head>
+<body>
+  
+    
+  
+  <div id="page">
+    <div class="mb-16 sticky top-0 z-20 bg-white">
+  <header class="py-4 flex items-baseline justify-between max-w-2xl mx-auto px-2">
+    <h1 class="text-lg text-center font-medium px-4 md:px-0 flex items-center">
+      <div class="site-logo-text font-normal">M</div>
+      <a href="/">My Blog</a>
+    </h1>
+    <div class="hidden sm:flex justify-center">
+      
+        
+        <a
+          href="/about"
+          class="mx-2 text-base border-b border-transparent"
+          
+        >关于本站</a>
+        
+          <span class="text-gray-200">/</span>
+        
+      
+        
+        <a
+          href="/links"
+          class="mx-2 text-base border-b border-transparent"
+          
+        >链接</a>
+        
+      
+    </div>
+    <div class="flex sm:hidden py-2 px-4 text-center cursor-pointer" @click="openMenu = true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg>
+    </div>
+  </header>
+
+  <div class="fixed top-0 right-0 bottom-0 left-0 bg-white hidden" :style="{
+    display: openMenu ? 'block !important' : 'none',
+  }" v-if="openMenu">
+    <div class="py-4 px-2 flex justify-end" @click="openMenu = false">
+      <div class="flex py-2 px-4 text-center cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></svg>
+      </div>
+    </div>
+    <div class="flex flex-col p-4">
+      
+        
+        <a
+          href="/about"
+          class="mx-2 my-4 text-base border-b border-transparent"
+          
+        >关于本站</a>
+      
+        
+        <a
+          href="/links"
+          class="mx-2 my-4 text-base border-b border-transparent"
+          
+        >链接</a>
+      
+    </div>
+  </div>
+</div>
+    <div class="border-b border-gray-200">
+      <div class="max-w-2xl mx-auto px-6 md:px-2">
+        <div class="my-24 text-center">
+          <h1 class="text-2xl font-bold">吃货记录</h1>
+          <div class="post-title-bar mx-auto rounded mt-4"></div>
+          <div class="text-gray-400 mt-4">2022.10.08</div>
+          <div class="flex justify-center mt-4">
+            
+              <a href="https://98may2.xyz/tags/default" class="inline-flex items-center mr-4 text-sm text-gray-600">
+                <span class="mr-1">#</span>未分类
+              </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sticky-bar" class="w-full sticky top-0 z-10 bg-white" style="height: 64px;"></div>
+    <div class="p-4 md:p-16 bg-white">
+      <div class="max-w-2xl mx-auto px-4 flex relative">
+        <section class="post-content flex-1 default-post-content max-w-2xl">
+          <div v-pre>
+            <p>来源：平时的一些社交App记录和自己的<a href="https://www.xiaohongshu.com/user/profile/5ef45429000000000100454a">小红书</a></p>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E7%B3%96%E6%9C%9D">糖朝</a>
+<ul>
+<li><a href="#%E6%B3%B0%E5%BC%8F%E7%B3%AF%E7%B1%B33%E9%80%891">泰式糯米3选1</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B8%AF%E5%BC%8F%E7%83%A7%E4%BB%99%E8%8D%892%E9%80%891">港式烧仙草2选1</a></li>
+</ul>
+</li>
+<li><a href="#%E8%8C%B6%E7%99%BE%E9%81%93">茶百道</a>
+<ul>
+<li><a href="#%E5%86%B7%E8%90%83%E8%8C%B6%E5%A4%A7%E6%9D%AF2%E9%80%891">冷萃茶（大杯）2选1</a></li>
+<li><a href="#%E7%94%9F%E6%A4%B0%E5%A4%A7%E6%BB%A1%E8%B4%AF%E4%B8%AD%E6%9D%AF">生椰大满贯（中杯）</a></li>
+</ul>
+</li>
+<li><a href="#%E8%8B%B1%E6%AD%8C%E9%AD%82">英歌魂</a>
+<ul>
+<li><a href="#%E8%8C%89%E8%8E%89%E4%B9%8C%E9%BE%99%E9%B2%9C%E5%A5%B6%E8%8C%B6">茉莉乌龙鲜奶茶</a></li>
+</ul>
+</li>
+<li><a href="#%E9%BA%A6%E5%BD%93%E5%8A%B3">麦当劳</a>
+<ul>
+<li><a href="#%E6%B6%A8%E8%8A%9D%E5%A3%AB%E5%8C%85">涨芝士包</a></li>
+<li><a href="#%E5%A4%A7%E8%84%86%E9%B8%A1%E6%89%92%E9%BA%A6%E6%BB%A1%E5%88%86%E7%BB%84%E5%90%88%E9%A4%90">大脆鸡扒麦满分组合餐</a></li>
+<li><a href="#%E8%8A%9D%E8%8A%9D%E7%89%9B%E7%89%9B%E5%A0%A1">芝芝牛牛堡</a></li>
+<li><a href="#%E5%B0%8F%E7%82%92%E5%92%8C%E7%89%9B%E5%A0%A1">小炒和牛堡</a></li>
+</ul>
+</li>
+<li><a href="#%E6%A1%83%E5%9B%AD%E4%B8%89%E7%AB%A0%E4%B8%AD%E5%9B%BD%E8%8C%B6%E6%8B%BF%E9%93%81">桃园三章·中国茶拿铁</a>
+<ul>
+<li><a href="#%E7%BA%A2%E5%AE%9D%E7%9F%B3%E8%A5%BF%E7%93%9C%E7%94%9F%E6%89%93%E6%A4%B0">红宝石西瓜生打椰</a></li>
+<li><a href="#%E6%9D%A8%E6%9E%9D%E7%94%98%E9%9C%B2%E7%99%BD%E6%A1%83%E4%B9%8C%E9%BE%99%E6%8B%BF%E9%93%81">杨枝甘露＋白桃乌龙拿铁</a></li>
+<li><a href="#%E5%8E%9A%E8%8A%8B%E6%B3%A5%E6%92%9E%E6%92%9E%E5%A5%B6%E7%BB%BF%E7%99%BD%E6%A1%83%E4%B9%8C%E9%BE%99%E5%A5%B6%E8%8C%B6%E7%83%AD%E9%A5%AE">厚芋泥撞撞奶绿＋白桃乌龙奶茶（热饮）</a></li>
+</ul>
+</li>
+<li><a href="#%E7%94%B5%E8%A7%86%E5%8F%B0%E5%AF%B9%E9%9D%A2%E5%B7%B7%E5%86%85%E8%82%A0%E7%B2%89">电视台对面巷内肠粉</a>
+<ul>
+<li><a href="#%E7%89%B9%E8%89%B2%E8%8D%89%E8%8F%87%E8%82%A0%E7%B2%89%E7%89%9B%E8%82%89">特色草菇肠粉＋牛肉</a></li>
+<li><a href="#%E7%89%9B%E8%82%89%E8%82%A0%E7%B2%89">牛肉肠粉</a></li>
+</ul>
+</li>
+<li><a href="#%E8%9C%9C%E9%9B%AA%E5%86%B0%E5%9F%8E">蜜雪冰城</a>
+<ul>
+<li><a href="#%E5%B0%8F%E6%B1%A4%E5%9C%86%E5%A5%B6%E8%8C%B6%E8%9C%9C%E6%A1%83%E5%9B%9B%E5%AD%A3%E6%98%A5%E8%8A%9D%E5%A3%AB%E5%A5%B6%E7%9B%96%E5%9B%9B%E5%AD%A3%E6%98%A5%E9%98%BF%E5%8D%8E%E7%94%B0%E5%A4%A7%E5%9C%A3%E4%BB%A3">小汤圆奶茶＋蜜桃四季春＋芝士奶盖四季春＋阿华田大圣代</a></li>
+<li><a href="#%E6%B8%AF%E5%BC%8F%E6%9D%A8%E6%9E%9D%E7%94%98%E9%9C%B2-%E8%84%86%E5%95%B5%E5%95%B5%E9%9B%AA%E7%8E%8B%E9%9B%AA%E9%A1%B6%E5%92%96%E5%95%A1">港式杨枝甘露-脆啵啵＋雪王雪顶咖啡</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B1%95%E5%A4%B4%E6%B3%A2%E8%AE%B0%E7%89%9B%E8%82%89%E5%BA%97">汕头波记牛肉店</a>
+<ul>
+<li><a href="#%E6%B9%BF%E7%82%92%E7%89%9B%E8%82%89%E7%B2%BF-%E5%A4%A7%E4%BB%BD">湿炒牛肉粿-大份</a></li>
+</ul>
+</li>
+<li><a href="#%E9%85%B8%E5%A5%B6%E6%B0%B4%E6%9E%9C%E6%8D%9E%E5%8D%83%E6%9E%9C%E4%B8%87%E5%AE%B6%E5%85%B4">酸奶水果捞千果万家兴</a>
+<ul>
+<li><a href="#%E6%8B%9B%E7%89%8C%E9%85%B8%E5%A5%B6%E6%B0%B4%E6%9E%9C%E6%8D%9E-%E4%B8%AD%E4%BB%BD">招牌酸奶水果捞-中份</a></li>
+</ul>
+</li>
+<li><a href="#%E9%BB%84%E5%B0%8F%E5%A7%90%E9%A5%AD%E5%9B%A2%E6%8D%9E%E9%9D%A2%E5%B0%8F%E5%90%83">黄小姐（饭团.捞面.小吃）</a>
+<ul>
+<li><a href="#%E5%8F%B0%E6%B9%BE%E7%83%A4%E8%82%A0%E6%8D%9E%E9%9D%A2xo%E9%85%B1">台湾烤肠捞面（XO酱）</a></li>
+</ul>
+</li>
+<li><a href="#%E6%98%A5%E9%98%B3lab">春阳LAB</a>
+<ul>
+<li><a href="#%E6%98%A5%E9%98%B3%E4%B9%8C%E9%BE%99%E7%8F%8D%E7%8F%A0%E5%A5%B6%E8%8C%B6m500ml">春阳乌龙珍珠奶茶M（500ML）</a></li>
+<li><a href="#%E5%B8%83%E4%B8%81%E9%B2%9C%E5%A5%B6%E8%8C%B6">布丁鲜奶茶</a></li>
+</ul>
+</li>
+<li><a href="#%E5%A1%AB%E4%BB%94%E7%A0%82%E9%94%85">填仔砂锅</a>
+<ul>
+<li><a href="#%E7%A0%82%E9%94%85%E9%B3%9D%E9%B1%BC%E9%9D%A2">砂锅鳝鱼面</a></li>
+</ul>
+</li>
+<li><a href="#%E8%87%B3%E5%B0%8A%E6%B1%89%E5%A0%A1%E5%AB%A9%E7%89%9B%E4%BA%94%E6%96%B9%E9%9F%A9%E5%BC%8F%E7%82%B8%E9%B8%A1">至尊汉堡·嫩牛五方·韩式炸鸡</a>
+<ul>
+<li><a href="#%E5%AB%A9%E7%89%9B%E4%BA%94%E6%96%B9%E5%8D%95%E4%BA%BA%E9%A4%90">嫩牛五方单人餐</a></li>
+</ul>
+</li>
+<li><a href="#%E5%A1%94%E6%96%AF%E6%B1%80%E4%B8%AD%E5%9B%BD%E6%B1%89%E5%A0%A1">塔斯汀中国汉堡</a>
+<ul>
+<li><a href="#%E5%A4%9A%E6%B1%81%E7%89%9B%E8%82%89%E4%B8%AD%E5%9B%BD%E6%B1%89%E5%A0%A1%E4%B8%8A%E6%A0%A1%E9%B8%A1%E5%9D%97%E5%86%B0%E6%9F%A0%E5%8F%AF%E4%B9%90">多汁牛肉中国汉堡＋上校鸡块＋冰柠可乐</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8C%85%E9%81%93%E5%B9%BF%E5%BC%8F%E7%82%B9%E5%BF%83%E4%B8%93%E9%97%A8%E5%BA%97">包道广式点心专门店</a>
+<ul>
+<li><a href="#%E7%85%8E%E9%A5%BA%E7%BB%84%E5%90%88">煎饺组合</a></li>
+</ul>
+</li>
+<li><a href="#%E7%B1%B3%E8%A5%BF%E7%B1%B3%E8%A5%BF%E5%AF%BF%E5%8F%B8%E7%89%9B%E4%B8%BC%E9%A5%AD">米西米西寿司（牛丼饭）</a>
+<ul>
+<li><a href="#%E7%81%AB%E5%B1%B1%E7%9F%B3%E7%83%A4%E8%82%89%E8%82%A0%E6%97%A5%E5%BC%8F%E8%9F%B9%E6%9F%B3%E9%A5%AD%E6%98%86%E5%B8%83%E6%B1%A4%E6%97%A5%E5%BC%8F%E5%B0%8F%E8%8F%9C">火山石（烤肉肠）＋日式蟹柳饭＋昆布汤＋日式小菜</a></li>
+<li><a href="#%E6%97%A5%E5%BC%8F%E8%9F%B9%E6%9F%B3%E9%A5%AD%E8%8A%B1%E7%94%B2%E6%B1%A4%E6%97%A5%E5%BC%8F%E5%B0%8F%E8%8F%9C">日式蟹柳饭➕花甲汤➕日式小菜</a></li>
+</ul>
+</li>
+<li><a href="#%E8%89%AF%E5%93%81%E5%8D%B7%E9%A5%BC%E6%89%8B%E6%8A%93%E9%A5%BC%E7%85%8E%E9%A5%BC%E5%B0%8F%E5%90%83">良品卷饼（手抓饼，煎饼，小吃）</a>
+<ul>
+<li><a href="#%E9%A6%99%E9%85%A5%E9%B8%A1%E6%9F%B3%E5%8D%B7%E9%A5%BC500ml%E5%8F%AF%E4%B9%90">香酥鸡柳卷饼＋500ML可乐</a></li>
+<li><a href="#%E7%81%AB%E8%85%BF%E9%87%8C%E8%84%8A%E8%82%89%E5%8D%B7%E9%A5%BC%E7%83%AD%E7%8B%97">火腿里脊肉卷饼➕热狗</a></li>
+</ul>
+</li>
+<li><a href="#%E5%96%9C%E5%A7%90%E7%82%B8%E4%B8%B2">喜姐炸串</a>
+<ul>
+<li><a href="#%E6%B4%8B%E5%AD%90%E6%8E%A8%E8%8D%90%E3%81%AE%E5%B0%8F%E9%A3%9F%E5%A5%97%E9%A4%90">洋子推荐の小食套餐</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AE%9D%E5%B2%9B%E5%86%B0%E9%95%87">宝岛冰镇</a>
+<ul>
+<li><a href="#%E7%BB%BF%E8%B1%86%E5%88%A8%E5%86%B0%E9%9B%AA%E7%90%83">绿豆刨冰＋雪球</a></li>
+</ul>
+</li>
+<li><a href="#%E7%99%BD%E5%A1%94%E6%97%AD%E5%85%B4%E9%B2%9C%E7%89%9B%E8%82%89">白塔旭兴鲜牛肉</a>
+<ul>
+<li><a href="#%E6%B9%BF%E7%82%92%E7%89%9B%E8%82%89%E7%B2%BF">湿炒牛肉粿</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8D%88%E9%A4%90">午餐</a>
+<ul>
+<li><a href="#%E9%9D%A2%E6%B1%A4">面汤</a></li>
+</ul>
+</li>
+<li><a href="#%E6%97%A9%E9%A4%90">早餐</a>
+<ul>
+<li><a href="#%E8%82%A0%E7%B2%89">肠粉</a></li>
+<li><a href="#%E8%82%A0%E7%B2%89-2">肠粉</a></li>
+<li><a href="#%E7%89%9B%E8%82%89%E7%B2%BF%E6%9D%A1">牛肉粿条</a></li>
+</ul>
+</li>
+<li><a href="#%E7%9B%8A%E7%A6%BE%E5%A0%82">益禾堂</a>
+<ul>
+<li><a href="#%E8%8A%92%E8%8A%92%E7%99%BE%E6%9E%9C%E9%A6%99">芒芒百果香</a></li>
+</ul>
+</li>
+<li><a href="#%E7%B2%A5%E5%88%B0">粥到</a>
+<ul>
+<li><a href="#%E6%89%8B%E5%B7%A5%E8%82%89%E6%B2%AB%E8%82%A0%E7%B2%89-%E4%B8%8A%E6%B5%B7%E5%B0%8F%E7%AC%BC%E5%8C%85">手工肉沫肠粉 上海小笼包</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B7%A1%E9%9B%AA%E6%9E%9C%E8%8C%B6">淡雪果茶</a>
+<ul>
+<li><a href="#%E8%8A%92%E6%9E%9C%E5%93%88%E5%AF%86%E7%93%9C%E9%85%B8%E5%A5%B6">芒果哈密瓜酸奶</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B2%AA%E4%B8%8A%E9%98%BF%E5%A7%A8">沪上阿姨</a>
+<ul>
+<li><a href="#%E8%8A%9D%E5%A3%AB%E8%91%A1%E8%90%84%E5%A5%B6%E7%9B%96%E5%A4%A7%E6%9D%AF">芝士葡萄奶盖（大杯）</a></li>
+</ul>
+</li>
+<li><a href="#%E5%B1%B9%E5%AD%A3%E5%88%B6%E8%8C%B6">屹季制茶</a>
+<ul>
+<li><a href="#%E5%B8%83%E4%B8%81%E5%A5%B6%E8%8C%B6">布丁奶茶</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B1%A4%E8%BE%BE%E4%BA%BA">汤达人</a>
+<ul>
+<li><a href="#%E6%97%A5%E5%BC%8F%E8%B1%9A%E9%AA%A8%E6%8B%89%E9%9D%A2">日式豚骨拉面</a></li>
+</ul>
+</li>
+<li><a href="#%E5%BA%B7%E5%B8%88%E5%82%85">康师傅</a>
+<ul>
+<li><a href="#%E9%B2%9C%E8%99%BE%E9%B1%BC%E6%9D%BF%E9%9D%A2%E7%A2%97%E8%A3%85">鲜虾鱼板面（碗装）</a></li>
+<li><a href="#%E8%91%B1%E9%A6%99%E6%8E%92%E9%AA%A8%E9%9D%A2%E7%A2%97%E8%A3%85">葱香排骨面（碗装）</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8F%A4%E8%8C%97">古茗</a>
+<ul>
+<li><a href="#%E8%B1%86%E4%B9%B3%E7%BB%B5%E7%BB%B5%E5%A5%B6%E8%8C%B6">豆乳绵绵奶茶</a></li>
+</ul>
+</li>
+<li><a href="#%E9%B2%81%E7%8F%AD%E6%B1%89%E5%A0%A1">鲁班汉堡</a>
+<ul>
+<li><a href="#%E5%8F%8C%E5%A0%A1%E5%A5%97%E9%A4%90">双堡套餐</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AE%9E%E6%83%A0%E9%93%81%E6%9D%BF%E7%83%A7">实惠铁板烧</a>
+<ul>
+<li><a href="#%E7%89%9B%E8%82%89%E5%B0%8F%E5%B0%8F%E4%B8%B2624">牛肉小小串（6＋24）</a></li>
+</ul>
+</li>
+<li><a href="#%E7%BE%8E%E8%8A%9D%E8%8A%9D">美芝芝</a>
+<ul>
+<li><a href="#%E8%9B%8B%E7%B3%95%E5%A5%B6%E8%8C%B6">蛋糕奶茶</a></li>
+<li><a href="#%E5%A5%A5%E5%88%A9%E5%A5%A5%E8%9B%8B%E7%B3%95%E5%A5%B6%E8%8C%B6">奥利奥蛋糕奶茶</a></li>
+</ul>
+</li>
+<li><a href="#%E7%B2%92%E7%B1%B3%E4%BE%BF%E5%BD%93%E9%B8%A1%E6%8E%92%E9%A5%AD">粒米便当鸡排饭</a>
+<ul>
+<li><a href="#%E5%A5%A5%E5%B0%94%E8%89%AF%E9%B8%A1%E6%89%92%E9%A5%AD">奥尔良鸡扒饭</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<h2 id="糖朝">糖朝</h2>
+<h3 id="泰式糯米3选1">泰式糯米3选1</h3>
+<p>选了芒果椰汁黑糯米，热的</p>
+<p>还算好吃吧，不过糯米需要搭配其他一起吃比较好，单纯吃糯米吃不下去</p>
+<h2 id="港式烧仙草2选1">港式烧仙草2选1</h2>
+<p>选了糖朝烧仙草，是奶茶，热的</p>
+<p>热的也好吃！</p>
+<h1 id="茶百道">茶百道</h1>
+<h2 id="冷萃茶大杯2选1">冷萃茶（大杯）2选1</h2>
+<h2 id="生椰大满贯中杯">生椰大满贯（中杯）</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/62b4b3e4000000002103dddd">小红书</a></p>
+<p>点的是冰乌龙茶<code>少冰、标准糖</code></p>
+<p>是挺好喝的</p>
+<p>另一款不清楚</p>
+<h1 id="英歌魂">英歌魂</h1>
+<h2 id="茉莉乌龙鲜奶茶">茉莉乌龙鲜奶茶</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/62aea77f0000000001029585">小红书</a></p>
+<p><code>去冰，标准糖</code></p>
+<p>一般般，喜欢茉莉口味和乌龙茶的应该会好点</p>
+<h1 id="麦当劳">麦当劳</h1>
+<h2 id="涨芝士包">涨芝士包</h2>
+<p>(小红书)[https://www.xiaohongshu.com/discovery/item/62adeb2d000000000f008a47]</p>
+<p>一次足以，不合胃口</p>
+<h2 id="大脆鸡扒麦满分组合餐">大脆鸡扒麦满分组合餐</h2>
+<p>(小红书)[https://www.xiaohongshu.com/discovery/item/608250ac000000002103eb61]</p>
+<p>👻汉堡好吃，豆浆，No！</p>
+<h2 id="芝芝牛牛堡">芝芝牛牛堡</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/60824f4f000000000102ff1c">小红书</a></p>
+<p>卖相不好<code>微辣</code>其他还能接受，个头有点小</p>
+<h2 id="小炒和牛堡">小炒和牛堡</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/6080556d0000000021034cec">小红书</a></p>
+<p>之前吃的，可惜不是我的菜😭<code>微辣</code></p>
+<h1 id="桃园三章中国茶拿铁">桃园三章·中国茶拿铁</h1>
+<h2 id="红宝石西瓜生打椰">红宝石西瓜生打椰</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/62ade955000000000102a508">小红书</a></p>
+<p><code>沙冰、标准糖</code></p>
+<p>名字太长了省略了一下</p>
+<p>还算能喝，下次试试别的（苦瓜应该会被我排除在外？）</p>
+<p>是沙冰，标准糖</p>
+<h2 id="杨枝甘露白桃乌龙拿铁">杨枝甘露＋白桃乌龙拿铁</h2>
+<p>两款都很不错，很好喝！</p>
+<h2 id="厚芋泥撞撞奶绿白桃乌龙奶茶热饮">厚芋泥撞撞奶绿＋白桃乌龙奶茶（热饮）</h2>
+<p>呃，凑够红包的东西……对于芋泥我真的是打咩，吃不惯！</p>
+<p>但是有一说一，白桃乌龙奶茶是真的好喝！</p>
+<h1 id="电视台对面巷内肠粉">电视台对面巷内肠粉</h1>
+<h2 id="特色草菇肠粉牛肉">特色草菇肠粉＋牛肉</h2>
+<p>憋了一个月没吃肠粉（可能不止）终于点了一份来吃</p>
+<p>不得不说，加了牛肉也挺好吃的，牛肉也没有因为酱料发生奇妙的口感变化</p>
+<h2 id="牛肉肠粉">牛肉肠粉</h2>
+<p>那天是趁着￥9.9买的</p>
+<p>好歹给我塞了￥2的牛肉，还是挺好吃的这家的肠粉</p>
+<p>虽然不一定是最好吃的肠粉，但也算是我口味上觉得可以的肠粉店</p>
+<h1 id="蜜雪冰城">蜜雪冰城</h1>
+<h2 id="小汤圆奶茶蜜桃四季春芝士奶盖四季春阿华田大圣代">小汤圆奶茶＋蜜桃四季春＋芝士奶盖四季春＋阿华田大圣代</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/6205d0f90000000021037248">小红书</a></p>
+<p><code>小汤圆奶茶：热、中杯、少糖</code><br>
+<code>蜜桃四季春：常温、少糖</code><br>
+<code>芝士奶盖四季春：中杯、热、正常糖</code></p>
+<p>小汤圆奶茶：少糖对我来说还不够甜</p>
+<p>蜜桃四季春：很好喝</p>
+<p>芝士奶盖四季春：下次要把奶盖搅拌均匀……不然最后一口都是奶盖会甜鼾</p>
+<p>阿华田大圣代：好恰</p>
+<h2 id="港式杨枝甘露-脆啵啵雪王雪顶咖啡">港式杨枝甘露-脆啵啵＋雪王雪顶咖啡</h2>
+<p>都很好喝！下次还可以点！</p>
+<h1 id="汕头波记牛肉店">汕头波记牛肉店</h1>
+<h2 id="湿炒牛肉粿-大份">湿炒牛肉粿-大份</h2>
+<p>这家也是我吃着觉得不错的牛肉店</p>
+<h1 id="酸奶水果捞千果万家兴">酸奶水果捞千果万家兴</h1>
+<h2 id="招牌酸奶水果捞-中份">招牌酸奶水果捞-中份</h2>
+<p>挺不错的……不过我不怎么喜欢吃水果，这个是突然想吃了才会点</p>
+<h1 id="黄小姐饭团捞面小吃">黄小姐（饭团.捞面.小吃）</h1>
+<h2 id="台湾烤肠捞面xo酱">台湾烤肠捞面（XO酱）</h2>
+<p>啊，这个好吃，我喜欢！可惜后面不配送我这边了，以后有机会去店里吃！</p>
+<h1 id="春阳lab">春阳LAB</h1>
+<h2 id="春阳乌龙珍珠奶茶m500ml">春阳乌龙珍珠奶茶M（500ML）</h2>
+<p><code>外卖平台已搜不到此店铺</code></p>
+<p>这个也是很不错的，只是珍珠奶茶我喝太多了，已经不喜欢吃珍珠了</p>
+<h2 id="布丁鲜奶茶">布丁鲜奶茶</h2>
+<p><code>外卖平台已搜不到此店铺</code></p>
+<p><a href="https://www.xiaohongshu.com/discovery/item/60b4ad45000000000102e5c0">小红书</a></p>
+<p><code>规格：中杯，甜度：全糖，冷热：温</code></p>
+<p>不吃甜的千万记住不要点温的还➕全糖，会甜酣的</p>
+<p>不多说了，布丁口感好，奶茶味道也很棒，值得回购</p>
+<h1 id="填仔砂锅">填仔砂锅</h1>
+<h2 id="砂锅鳝鱼面">砂锅鳝鱼面</h2>
+<p><code>已关店</code></p>
+<p>这个是亲戚家的，支持一下，也是让我尝到了不一样的面汤！沙茶面汤好喝！</p>
+<p>可惜亲戚做得不久，以后要吃这种鳝鱼面还得跟他们要个地址</p>
+<h1 id="至尊汉堡嫩牛五方韩式炸鸡">至尊汉堡·嫩牛五方·韩式炸鸡</h1>
+<h2 id="嫩牛五方单人餐">嫩牛五方单人餐</h2>
+<p>套餐内容：<code>嫩牛五方＋双层牛肉堡＋可乐</code></p>
+<p>忘了怎么样了，不过这个套餐吃得很饱，我很喜欢jpg</p>
+<h1 id="塔斯汀中国汉堡">塔斯汀中国汉堡</h1>
+<h2 id="多汁牛肉中国汉堡上校鸡块冰柠可乐">多汁牛肉中国汉堡＋上校鸡块＋冰柠可乐</h2>
+<p>这个是在×团上购买的到店套餐，我到店打包带走</p>
+<p>汉堡：很一般，真的太一般了……这个跟去面包店买的汉堡差不多吧，我吃不惯这种</p>
+<p>鸡块还行吧，印象太久了，没有特别深刻的印象那就是没啥大问题</p>
+<p>冰柠可乐还不错，虽然不可能为了喝这个东西再去吃汉堡！</p>
+<h1 id="包道广式点心专门店">包道广式点心专门店</h1>
+<h2 id="煎饺组合">煎饺组合</h2>
+<p><code>煎饺组合：煎饺×3＋豆浆×1</code></p>
+<p>第一次点这个东西，还不错，平常也不会去吃这家店，大早上吃煎饺也是另一番滋味！</p>
+<h1 id="米西米西寿司牛丼饭">米西米西寿司（牛丼饭）</h1>
+<h2 id="火山石烤肉肠日式蟹柳饭昆布汤日式小菜">火山石（烤肉肠）＋日式蟹柳饭＋昆布汤＋日式小菜</h2>
+<p>这家也是算挺好吃的，我一般都是吃带小菜的套餐</p>
+<p>不过每次都逃不过吃半熟的鸡蛋……虽然也不会很难吃，心理上还是过不去吧……但又会折服在美食之下</p>
+<h2 id="日式蟹柳饭花甲汤日式小菜">日式蟹柳饭➕花甲汤➕日式小菜</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/60b4b02c000000002103e211">小红书</a></p>
+<p>标题超数字了，把套餐写在这里：日式蟹柳饭➕花甲汤➕日式小菜</p>
+<p>总的来说很对我的口味，所以吃得很开心</p>
+<p>花甲汤里面是放的海苔，偏咸</p>
+<p>不过这个饭菜配咸汤会稍微好吃点，小菜应该是稍微有点辣的（酱料？）也不算很辣，但完全不吃辣的可能有点危险</p>
+<h1 id="良品卷饼手抓饼煎饼小吃">良品卷饼（手抓饼，煎饼，小吃）</h1>
+<h2 id="香酥鸡柳卷饼500ml可乐">香酥鸡柳卷饼＋500ML可乐</h2>
+<p>好吃哦，自从点过他家的卷饼，一想吃卷饼总会吃他家的，真的很好吃，而且符合我的口味！</p>
+<h2 id="火腿里脊肉卷饼热狗">火腿里脊肉卷饼➕热狗</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/60b4ae89000000002103da02">小红书</a></p>
+<p><code>配料：沙拉酱</code></p>
+<p>好吃是真的好吃，但是本人不习惯吃生菜和瓜瓜，啃了老半天</p>
+<p>不过料很足，本来热狗只是用来凑数的，没想到老板帮我加进去了，双倍的快乐（火腿➕热狗）</p>
+<p>也很管饱就是了（胃口小）</p>
+<h1 id="喜姐炸串">喜姐炸串</h1>
+<h2 id="洋子推荐の小食套餐">洋子推荐の小食套餐</h2>
+<p><code>套餐内容：Q弹鱼豆腐（5串）＋滑嫩鸡肉串（20串）</code></p>
+<p>因为不知道点什么串，就点了个套餐</p>
+<p>挺好吃的，鱼豆腐好好吃！</p>
+<h1 id="宝岛冰镇">宝岛冰镇</h1>
+<h2 id="绿豆刨冰雪球">绿豆刨冰＋雪球</h2>
+<p>嗯……绿豆刨冰一般般，雪球挺好吃的</p>
+<h1 id="白塔旭兴鲜牛肉">白塔旭兴鲜牛肉</h1>
+<h2 id="湿炒牛肉粿">湿炒牛肉粿</h2>
+<p>挺不错的，牛肉也很好吃！符合我的口味！</p>
+<h1 id="午餐">午餐</h1>
+<h2 id="面汤">面汤</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/60fb9d85000000000102a4d7">小红书</a></p>
+<p>这家的面汤一直是料足且实惠好吃，时不时就要去光临一下（虽然个人并不是很喜欢这家的口味）</p>
+<p>不过每次都吃不太下，早餐不吃的话就吃得下了</p>
+<h1 id="早餐">早餐</h1>
+<h2 id="肠粉">肠粉</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/60fb95c400000000010280d3">小红书</a></p>
+<p>这个可以算潮汕肠粉</p>
+<p>可惜早上开的时间不算很早</p>
+<h2 id="肠粉-2">肠粉</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/60f514500000000021037e4b">小红书</a></p>
+<p>早上岀去吃的，不过这个应该是广氏肠粉？</p>
+<h2 id="牛肉粿条">牛肉粿条</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/60f38fa90000000021034782">小红书</a></p>
+<p>早上吃了一碗，精神棒棒</p>
+<h1 id="益禾堂">益禾堂</h1>
+<h2 id="芒芒百果香">芒芒百果香</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/60b4b124000000002103b62d">小红书</a></p>
+<p><code>规格：常规，温度：少冰，甜度：全糖</code></p>
+<p>味道不错，但是百香果的籽好多，以后不会点百香果了</p>
+<p>虽然好喝但是吐籽好麻烦，我选择好吃又简单的吧（超懒）</p>
+<h1 id="粥到">粥到</h1>
+<h2 id="手工肉沫肠粉-上海小笼包">手工肉沫肠粉 上海小笼包</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/60b4ac67000000000102a3dd">小红书</a></p>
+<p>某天的早餐</p>
+<p>肠粉由于和我平时吃的有点不太一样，口感上来说确实是有点小小的差别，但不会影响太多，十分好吃</p>
+<p>小笼包的话，大概就是灌汤包的那种，咬下去就会感受到汤汁爆炸在嘴里</p>
+<h1 id="淡雪果茶">淡雪果茶</h1>
+<h2 id="芒果哈密瓜酸奶">芒果哈密瓜酸奶</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/609caa22000000000102a373">小红书</a></p>
+<p><code>甜度：少糖，温度：少冰</code></p>
+<p>正好路过就去买一杯，好久之前就想试试看味道咋样，果然很好喝</p>
+<p>我是没加冰的，也很好喝，夏天里来一杯果茶心情都变好了</p>
+<h1 id="沪上阿姨">沪上阿姨</h1>
+<h2 id="芝士葡萄奶盖大杯">芝士葡萄奶盖（大杯）</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/609541a40000000001024fb9">小红书</a></p>
+<p><code>规格：常规，做法：标准糖，口味：沙冰</code></p>
+<p>很甜，很甜~本以为是冰的应该还好，不过葡萄果肉很甜，奶盖也很甜</p>
+<p>冰沙好吃，很久没吃冰沙了😝</p>
+<h1 id="屹季制茶">屹季制茶</h1>
+<h2 id="布丁奶茶">布丁奶茶</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/608d37a50000000001029781">小红书</a></p>
+<p><code>温度：热饮，甜度：正常甜，加料：椰果</code></p>
+<p>刚好在附近就去店里买一份布丁奶茶（热饮）➕正常甜➕椰果</p>
+<p>事实证明，热饮会让甜度变得更甜，超出了本人的甜度承受，我适合吃5分或者3分甜</p>
+<h1 id="汤达人">汤达人</h1>
+<h2 id="日式豚骨拉面">日式豚骨拉面</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/60845a62000000000102c8af">小红书</a></p>
+<p>还不错，它的浓汤配料说要泡一会儿再加进去，试了一下口感不错，也不辣</p>
+<p>虽然我一般不吃配料😬</p>
+<h1 id="康师傅">康师傅</h1>
+<h2 id="鲜虾鱼板面碗装">鲜虾鱼板面（碗装）</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/6082ec0c000000002103fb5d">小红书</a></p>
+<p>还不错，但是比之前吃的那款偏辣</p>
+<p>可能是海带也会辣？（❌）可能是水放少了</p>
+<h2 id="葱香排骨面碗装">葱香排骨面（碗装）</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/6080553300000000210389c4">小红书</a></p>
+<p>尝试一下康师傅葱香排骨面😀</p>
+<p>900ml的泡面碗勉强塞得下</p>
+<p>( ´▽` )ﾉ只能和碗仔面对比，辣是不辣的，味道也还不错，可以试试</p>
+<h1 id="古茗">古茗</h1>
+<h2 id="豆乳绵绵奶茶">豆乳绵绵奶茶</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/6082505a0000000021035d81">小红书</a></p>
+<p><code>配料：不去料，温度：正常冰，甜度：七分甜</code></p>
+<p>不是我的菜</p>
+<p>咸甜咸甜的😣</p>
+<h1 id="鲁班汉堡">鲁班汉堡</h1>
+<h2 id="双堡套餐">双堡套餐</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/60824f840000000001024d0d">小红书</a></p>
+<p><code>饮料：芬达，口味：不辣</code></p>
+<p>很饱，汉堡也很好吃</p>
+<h1 id="实惠铁板烧">实惠铁板烧</h1>
+<h2 id="牛肉小小串624">牛肉小小串（6＋24）</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/60824ef1000000000102494b">小红书</a></p>
+<p>之前深夜想吃烧烤，买了一点点肉来吃，不经常吃辣结果被辣到了（⬅️菜）</p>
+<h1 id="美芝芝">美芝芝</h1>
+<h2 id="蛋糕奶茶">蛋糕奶茶</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/60824e4f000000002103e7b5">小红书</a></p>
+<p><code>加料：波霸，温度：冰</code></p>
+<p>蛋糕奶茶，上面这层超甜</p>
+<p>对于本人来说是甜鼾了的程度，建议跟奶茶一起吃</p>
+<p>还可以选择温度，也有很多配料，选过牛奶布丁，味道口感都不错</p>
+<h2 id="奥利奥蛋糕奶茶">奥利奥蛋糕奶茶</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/6080f4840000000021036aac">小红书</a></p>
+<p><code>加料：波霸，温度：少冰</code></p>
+<p>奥利奥碎好吃😋</p>
+<p>虽然还是一如既往的甜（本人不太吃甜的）</p>
+<h1 id="粒米便当鸡排饭">粒米便当鸡排饭</h1>
+<h2 id="奥尔良鸡扒饭">奥尔良鸡扒饭</h2>
+<p><a href="https://www.xiaohongshu.com/discovery/item/60824dbe00000000210355ed">小红书</a></p>
+<p><code>酱料：沙拉酱</code></p>
+<p>加的是沙拉酱</p>
+<p>味道是挺不错的，口味微辣</p>
+
+          </div>
+          <div class="py-4 text-gray-600 flex items-center justify-between">
+            <div class="">
+              <div class="text-sm text-gray-300">最后更新于: </div>
+              <div class="text-base font-medium">2022.10.10</div>
+            </div>
+            <!-- <div class="flex items-center text-sm text-gray-600">
+              <i class="ri-eye-line"></i> <span class="ml-2">{{ views }}</span>
+            </div> -->
+          </div>
+          <div>
+            <div id="disqus_thread"></div>
+          </div>
+        </section>
+        
+          <!-- <aside class="sticky toc-container flex-shrink-0 hidden md:block">
+            <div class="text-gray-600 mb-4">目 录</div>
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E7%B3%96%E6%9C%9D">糖朝</a>
+<ul>
+<li><a href="#%E6%B3%B0%E5%BC%8F%E7%B3%AF%E7%B1%B33%E9%80%891">泰式糯米3选1</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B8%AF%E5%BC%8F%E7%83%A7%E4%BB%99%E8%8D%892%E9%80%891">港式烧仙草2选1</a></li>
+</ul>
+</li>
+<li><a href="#%E8%8C%B6%E7%99%BE%E9%81%93">茶百道</a>
+<ul>
+<li><a href="#%E5%86%B7%E8%90%83%E8%8C%B6%E5%A4%A7%E6%9D%AF2%E9%80%891">冷萃茶（大杯）2选1</a></li>
+<li><a href="#%E7%94%9F%E6%A4%B0%E5%A4%A7%E6%BB%A1%E8%B4%AF%E4%B8%AD%E6%9D%AF">生椰大满贯（中杯）</a></li>
+</ul>
+</li>
+<li><a href="#%E8%8B%B1%E6%AD%8C%E9%AD%82">英歌魂</a>
+<ul>
+<li><a href="#%E8%8C%89%E8%8E%89%E4%B9%8C%E9%BE%99%E9%B2%9C%E5%A5%B6%E8%8C%B6">茉莉乌龙鲜奶茶</a></li>
+</ul>
+</li>
+<li><a href="#%E9%BA%A6%E5%BD%93%E5%8A%B3">麦当劳</a>
+<ul>
+<li><a href="#%E6%B6%A8%E8%8A%9D%E5%A3%AB%E5%8C%85">涨芝士包</a></li>
+<li><a href="#%E5%A4%A7%E8%84%86%E9%B8%A1%E6%89%92%E9%BA%A6%E6%BB%A1%E5%88%86%E7%BB%84%E5%90%88%E9%A4%90">大脆鸡扒麦满分组合餐</a></li>
+<li><a href="#%E8%8A%9D%E8%8A%9D%E7%89%9B%E7%89%9B%E5%A0%A1">芝芝牛牛堡</a></li>
+<li><a href="#%E5%B0%8F%E7%82%92%E5%92%8C%E7%89%9B%E5%A0%A1">小炒和牛堡</a></li>
+</ul>
+</li>
+<li><a href="#%E6%A1%83%E5%9B%AD%E4%B8%89%E7%AB%A0%E4%B8%AD%E5%9B%BD%E8%8C%B6%E6%8B%BF%E9%93%81">桃园三章·中国茶拿铁</a>
+<ul>
+<li><a href="#%E7%BA%A2%E5%AE%9D%E7%9F%B3%E8%A5%BF%E7%93%9C%E7%94%9F%E6%89%93%E6%A4%B0">红宝石西瓜生打椰</a></li>
+<li><a href="#%E6%9D%A8%E6%9E%9D%E7%94%98%E9%9C%B2%E7%99%BD%E6%A1%83%E4%B9%8C%E9%BE%99%E6%8B%BF%E9%93%81">杨枝甘露＋白桃乌龙拿铁</a></li>
+<li><a href="#%E5%8E%9A%E8%8A%8B%E6%B3%A5%E6%92%9E%E6%92%9E%E5%A5%B6%E7%BB%BF%E7%99%BD%E6%A1%83%E4%B9%8C%E9%BE%99%E5%A5%B6%E8%8C%B6%E7%83%AD%E9%A5%AE">厚芋泥撞撞奶绿＋白桃乌龙奶茶（热饮）</a></li>
+</ul>
+</li>
+<li><a href="#%E7%94%B5%E8%A7%86%E5%8F%B0%E5%AF%B9%E9%9D%A2%E5%B7%B7%E5%86%85%E8%82%A0%E7%B2%89">电视台对面巷内肠粉</a>
+<ul>
+<li><a href="#%E7%89%B9%E8%89%B2%E8%8D%89%E8%8F%87%E8%82%A0%E7%B2%89%E7%89%9B%E8%82%89">特色草菇肠粉＋牛肉</a></li>
+<li><a href="#%E7%89%9B%E8%82%89%E8%82%A0%E7%B2%89">牛肉肠粉</a></li>
+</ul>
+</li>
+<li><a href="#%E8%9C%9C%E9%9B%AA%E5%86%B0%E5%9F%8E">蜜雪冰城</a>
+<ul>
+<li><a href="#%E5%B0%8F%E6%B1%A4%E5%9C%86%E5%A5%B6%E8%8C%B6%E8%9C%9C%E6%A1%83%E5%9B%9B%E5%AD%A3%E6%98%A5%E8%8A%9D%E5%A3%AB%E5%A5%B6%E7%9B%96%E5%9B%9B%E5%AD%A3%E6%98%A5%E9%98%BF%E5%8D%8E%E7%94%B0%E5%A4%A7%E5%9C%A3%E4%BB%A3">小汤圆奶茶＋蜜桃四季春＋芝士奶盖四季春＋阿华田大圣代</a></li>
+<li><a href="#%E6%B8%AF%E5%BC%8F%E6%9D%A8%E6%9E%9D%E7%94%98%E9%9C%B2-%E8%84%86%E5%95%B5%E5%95%B5%E9%9B%AA%E7%8E%8B%E9%9B%AA%E9%A1%B6%E5%92%96%E5%95%A1">港式杨枝甘露-脆啵啵＋雪王雪顶咖啡</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B1%95%E5%A4%B4%E6%B3%A2%E8%AE%B0%E7%89%9B%E8%82%89%E5%BA%97">汕头波记牛肉店</a>
+<ul>
+<li><a href="#%E6%B9%BF%E7%82%92%E7%89%9B%E8%82%89%E7%B2%BF-%E5%A4%A7%E4%BB%BD">湿炒牛肉粿-大份</a></li>
+</ul>
+</li>
+<li><a href="#%E9%85%B8%E5%A5%B6%E6%B0%B4%E6%9E%9C%E6%8D%9E%E5%8D%83%E6%9E%9C%E4%B8%87%E5%AE%B6%E5%85%B4">酸奶水果捞千果万家兴</a>
+<ul>
+<li><a href="#%E6%8B%9B%E7%89%8C%E9%85%B8%E5%A5%B6%E6%B0%B4%E6%9E%9C%E6%8D%9E-%E4%B8%AD%E4%BB%BD">招牌酸奶水果捞-中份</a></li>
+</ul>
+</li>
+<li><a href="#%E9%BB%84%E5%B0%8F%E5%A7%90%E9%A5%AD%E5%9B%A2%E6%8D%9E%E9%9D%A2%E5%B0%8F%E5%90%83">黄小姐（饭团.捞面.小吃）</a>
+<ul>
+<li><a href="#%E5%8F%B0%E6%B9%BE%E7%83%A4%E8%82%A0%E6%8D%9E%E9%9D%A2xo%E9%85%B1">台湾烤肠捞面（XO酱）</a></li>
+</ul>
+</li>
+<li><a href="#%E6%98%A5%E9%98%B3lab">春阳LAB</a>
+<ul>
+<li><a href="#%E6%98%A5%E9%98%B3%E4%B9%8C%E9%BE%99%E7%8F%8D%E7%8F%A0%E5%A5%B6%E8%8C%B6m500ml">春阳乌龙珍珠奶茶M（500ML）</a></li>
+<li><a href="#%E5%B8%83%E4%B8%81%E9%B2%9C%E5%A5%B6%E8%8C%B6">布丁鲜奶茶</a></li>
+</ul>
+</li>
+<li><a href="#%E5%A1%AB%E4%BB%94%E7%A0%82%E9%94%85">填仔砂锅</a>
+<ul>
+<li><a href="#%E7%A0%82%E9%94%85%E9%B3%9D%E9%B1%BC%E9%9D%A2">砂锅鳝鱼面</a></li>
+</ul>
+</li>
+<li><a href="#%E8%87%B3%E5%B0%8A%E6%B1%89%E5%A0%A1%E5%AB%A9%E7%89%9B%E4%BA%94%E6%96%B9%E9%9F%A9%E5%BC%8F%E7%82%B8%E9%B8%A1">至尊汉堡·嫩牛五方·韩式炸鸡</a>
+<ul>
+<li><a href="#%E5%AB%A9%E7%89%9B%E4%BA%94%E6%96%B9%E5%8D%95%E4%BA%BA%E9%A4%90">嫩牛五方单人餐</a></li>
+</ul>
+</li>
+<li><a href="#%E5%A1%94%E6%96%AF%E6%B1%80%E4%B8%AD%E5%9B%BD%E6%B1%89%E5%A0%A1">塔斯汀中国汉堡</a>
+<ul>
+<li><a href="#%E5%A4%9A%E6%B1%81%E7%89%9B%E8%82%89%E4%B8%AD%E5%9B%BD%E6%B1%89%E5%A0%A1%E4%B8%8A%E6%A0%A1%E9%B8%A1%E5%9D%97%E5%86%B0%E6%9F%A0%E5%8F%AF%E4%B9%90">多汁牛肉中国汉堡＋上校鸡块＋冰柠可乐</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8C%85%E9%81%93%E5%B9%BF%E5%BC%8F%E7%82%B9%E5%BF%83%E4%B8%93%E9%97%A8%E5%BA%97">包道广式点心专门店</a>
+<ul>
+<li><a href="#%E7%85%8E%E9%A5%BA%E7%BB%84%E5%90%88">煎饺组合</a></li>
+</ul>
+</li>
+<li><a href="#%E7%B1%B3%E8%A5%BF%E7%B1%B3%E8%A5%BF%E5%AF%BF%E5%8F%B8%E7%89%9B%E4%B8%BC%E9%A5%AD">米西米西寿司（牛丼饭）</a>
+<ul>
+<li><a href="#%E7%81%AB%E5%B1%B1%E7%9F%B3%E7%83%A4%E8%82%89%E8%82%A0%E6%97%A5%E5%BC%8F%E8%9F%B9%E6%9F%B3%E9%A5%AD%E6%98%86%E5%B8%83%E6%B1%A4%E6%97%A5%E5%BC%8F%E5%B0%8F%E8%8F%9C">火山石（烤肉肠）＋日式蟹柳饭＋昆布汤＋日式小菜</a></li>
+<li><a href="#%E6%97%A5%E5%BC%8F%E8%9F%B9%E6%9F%B3%E9%A5%AD%E8%8A%B1%E7%94%B2%E6%B1%A4%E6%97%A5%E5%BC%8F%E5%B0%8F%E8%8F%9C">日式蟹柳饭➕花甲汤➕日式小菜</a></li>
+</ul>
+</li>
+<li><a href="#%E8%89%AF%E5%93%81%E5%8D%B7%E9%A5%BC%E6%89%8B%E6%8A%93%E9%A5%BC%E7%85%8E%E9%A5%BC%E5%B0%8F%E5%90%83">良品卷饼（手抓饼，煎饼，小吃）</a>
+<ul>
+<li><a href="#%E9%A6%99%E9%85%A5%E9%B8%A1%E6%9F%B3%E5%8D%B7%E9%A5%BC500ml%E5%8F%AF%E4%B9%90">香酥鸡柳卷饼＋500ML可乐</a></li>
+<li><a href="#%E7%81%AB%E8%85%BF%E9%87%8C%E8%84%8A%E8%82%89%E5%8D%B7%E9%A5%BC%E7%83%AD%E7%8B%97">火腿里脊肉卷饼➕热狗</a></li>
+</ul>
+</li>
+<li><a href="#%E5%96%9C%E5%A7%90%E7%82%B8%E4%B8%B2">喜姐炸串</a>
+<ul>
+<li><a href="#%E6%B4%8B%E5%AD%90%E6%8E%A8%E8%8D%90%E3%81%AE%E5%B0%8F%E9%A3%9F%E5%A5%97%E9%A4%90">洋子推荐の小食套餐</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AE%9D%E5%B2%9B%E5%86%B0%E9%95%87">宝岛冰镇</a>
+<ul>
+<li><a href="#%E7%BB%BF%E8%B1%86%E5%88%A8%E5%86%B0%E9%9B%AA%E7%90%83">绿豆刨冰＋雪球</a></li>
+</ul>
+</li>
+<li><a href="#%E7%99%BD%E5%A1%94%E6%97%AD%E5%85%B4%E9%B2%9C%E7%89%9B%E8%82%89">白塔旭兴鲜牛肉</a>
+<ul>
+<li><a href="#%E6%B9%BF%E7%82%92%E7%89%9B%E8%82%89%E7%B2%BF">湿炒牛肉粿</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8D%88%E9%A4%90">午餐</a>
+<ul>
+<li><a href="#%E9%9D%A2%E6%B1%A4">面汤</a></li>
+</ul>
+</li>
+<li><a href="#%E6%97%A9%E9%A4%90">早餐</a>
+<ul>
+<li><a href="#%E8%82%A0%E7%B2%89">肠粉</a></li>
+<li><a href="#%E8%82%A0%E7%B2%89-2">肠粉</a></li>
+<li><a href="#%E7%89%9B%E8%82%89%E7%B2%BF%E6%9D%A1">牛肉粿条</a></li>
+</ul>
+</li>
+<li><a href="#%E7%9B%8A%E7%A6%BE%E5%A0%82">益禾堂</a>
+<ul>
+<li><a href="#%E8%8A%92%E8%8A%92%E7%99%BE%E6%9E%9C%E9%A6%99">芒芒百果香</a></li>
+</ul>
+</li>
+<li><a href="#%E7%B2%A5%E5%88%B0">粥到</a>
+<ul>
+<li><a href="#%E6%89%8B%E5%B7%A5%E8%82%89%E6%B2%AB%E8%82%A0%E7%B2%89-%E4%B8%8A%E6%B5%B7%E5%B0%8F%E7%AC%BC%E5%8C%85">手工肉沫肠粉 上海小笼包</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B7%A1%E9%9B%AA%E6%9E%9C%E8%8C%B6">淡雪果茶</a>
+<ul>
+<li><a href="#%E8%8A%92%E6%9E%9C%E5%93%88%E5%AF%86%E7%93%9C%E9%85%B8%E5%A5%B6">芒果哈密瓜酸奶</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B2%AA%E4%B8%8A%E9%98%BF%E5%A7%A8">沪上阿姨</a>
+<ul>
+<li><a href="#%E8%8A%9D%E5%A3%AB%E8%91%A1%E8%90%84%E5%A5%B6%E7%9B%96%E5%A4%A7%E6%9D%AF">芝士葡萄奶盖（大杯）</a></li>
+</ul>
+</li>
+<li><a href="#%E5%B1%B9%E5%AD%A3%E5%88%B6%E8%8C%B6">屹季制茶</a>
+<ul>
+<li><a href="#%E5%B8%83%E4%B8%81%E5%A5%B6%E8%8C%B6">布丁奶茶</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B1%A4%E8%BE%BE%E4%BA%BA">汤达人</a>
+<ul>
+<li><a href="#%E6%97%A5%E5%BC%8F%E8%B1%9A%E9%AA%A8%E6%8B%89%E9%9D%A2">日式豚骨拉面</a></li>
+</ul>
+</li>
+<li><a href="#%E5%BA%B7%E5%B8%88%E5%82%85">康师傅</a>
+<ul>
+<li><a href="#%E9%B2%9C%E8%99%BE%E9%B1%BC%E6%9D%BF%E9%9D%A2%E7%A2%97%E8%A3%85">鲜虾鱼板面（碗装）</a></li>
+<li><a href="#%E8%91%B1%E9%A6%99%E6%8E%92%E9%AA%A8%E9%9D%A2%E7%A2%97%E8%A3%85">葱香排骨面（碗装）</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8F%A4%E8%8C%97">古茗</a>
+<ul>
+<li><a href="#%E8%B1%86%E4%B9%B3%E7%BB%B5%E7%BB%B5%E5%A5%B6%E8%8C%B6">豆乳绵绵奶茶</a></li>
+</ul>
+</li>
+<li><a href="#%E9%B2%81%E7%8F%AD%E6%B1%89%E5%A0%A1">鲁班汉堡</a>
+<ul>
+<li><a href="#%E5%8F%8C%E5%A0%A1%E5%A5%97%E9%A4%90">双堡套餐</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AE%9E%E6%83%A0%E9%93%81%E6%9D%BF%E7%83%A7">实惠铁板烧</a>
+<ul>
+<li><a href="#%E7%89%9B%E8%82%89%E5%B0%8F%E5%B0%8F%E4%B8%B2624">牛肉小小串（6＋24）</a></li>
+</ul>
+</li>
+<li><a href="#%E7%BE%8E%E8%8A%9D%E8%8A%9D">美芝芝</a>
+<ul>
+<li><a href="#%E8%9B%8B%E7%B3%95%E5%A5%B6%E8%8C%B6">蛋糕奶茶</a></li>
+<li><a href="#%E5%A5%A5%E5%88%A9%E5%A5%A5%E8%9B%8B%E7%B3%95%E5%A5%B6%E8%8C%B6">奥利奥蛋糕奶茶</a></li>
+</ul>
+</li>
+<li><a href="#%E7%B2%92%E7%B1%B3%E4%BE%BF%E5%BD%93%E9%B8%A1%E6%8E%92%E9%A5%AD">粒米便当鸡排饭</a>
+<ul>
+<li><a href="#%E5%A5%A5%E5%B0%94%E8%89%AF%E9%B8%A1%E6%89%92%E9%A5%AD">奥尔良鸡扒饭</a></li>
+</ul>
+</li>
+</ul>
+
+          </aside> -->
+        
+      </div>
+    </div>
+    <div class="py-8 text-gray-300 text-center border-t border-gray-200">
+  Powered by Gridea
+</div>
+  </div>
+
+  <script src="//cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  
+  <script src="//cdn.jsdelivr.net/npm/@gridea/theme@1.0.8/js/main.js"></script>
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+    
+  
+</body>
+</html>

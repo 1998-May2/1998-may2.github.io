@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en" style="--theme-color: #262626; --link-color: #262626;">
+<head>
+  <meta charset="UTF-8">
+  <title>GM醉西游 - My Blog</title>
+
+  <link rel="icon" href="">
+<!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> -->
+<link rel="alternate" type="application/atom+xml" title="My Blog - Atom Feed" href="https://98may2.xyz/atom.xml">
+
+  
+
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFCRR8Q57W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script> -->
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-182385326-1');
+    ga('set', 'dimension1', 'site/yE4bklzbb');
+    ga('set', 'dimension2', 'post/rBMKs_Au8');
+    ga('send', 'pageview');
+    // gtag('set', {
+    //   'custom_map': {
+    //     'dimension1': 'siteId',
+    //     'dimension2': 'postId',
+    //   }
+    // })
+
+    // gtag('config', 'G-NFCRR8Q57W', {
+    //   'siteId': 'site/yE4bklzbb',
+    //   'postId': 'post/rBMKs_Au8',
+    // });
+  </script>
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="个人用攻略">
+
+  <meta property="og:title" content="GM醉西游 - My Blog">
+  <meta property="og:description" content="个人用攻略">
+  
+  <meta property="og:url" content="https://98may2.xyz/gm-zui-xi-you/">
+  <meta property="og:site_name" content="My Blog">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="GM醉西游">
+
+  <meta name="gridea:post_id" content="rBMKs_Au8">
+
+  <link rel="canonical" href="https://98may2.xyz/gm-zui-xi-you">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.0.3/styles/a11y-light.css">
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@gridea/theme@1.0.8/css/main.css">
+
+</head>
+<body>
+  
+    
+  
+  <div id="page">
+    <div class="mb-16 sticky top-0 z-20 bg-white">
+  <header class="py-4 flex items-baseline justify-between max-w-2xl mx-auto px-2">
+    <h1 class="text-lg text-center font-medium px-4 md:px-0 flex items-center">
+      <div class="site-logo-text font-normal">M</div>
+      <a href="/">My Blog</a>
+    </h1>
+    <div class="hidden sm:flex justify-center">
+      
+        
+        <a
+          href="/about"
+          class="mx-2 text-base border-b border-transparent"
+          
+        >关于本站</a>
+        
+          <span class="text-gray-200">/</span>
+        
+      
+        
+        <a
+          href="/links"
+          class="mx-2 text-base border-b border-transparent"
+          
+        >链接</a>
+        
+      
+    </div>
+    <div class="flex sm:hidden py-2 px-4 text-center cursor-pointer" @click="openMenu = true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg>
+    </div>
+  </header>
+
+  <div class="fixed top-0 right-0 bottom-0 left-0 bg-white hidden" :style="{
+    display: openMenu ? 'block !important' : 'none',
+  }" v-if="openMenu">
+    <div class="py-4 px-2 flex justify-end" @click="openMenu = false">
+      <div class="flex py-2 px-4 text-center cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></svg>
+      </div>
+    </div>
+    <div class="flex flex-col p-4">
+      
+        
+        <a
+          href="/about"
+          class="mx-2 my-4 text-base border-b border-transparent"
+          
+        >关于本站</a>
+      
+        
+        <a
+          href="/links"
+          class="mx-2 my-4 text-base border-b border-transparent"
+          
+        >链接</a>
+      
+    </div>
+  </div>
+</div>
+    <div class="border-b border-gray-200">
+      <div class="max-w-2xl mx-auto px-6 md:px-2">
+        <div class="my-24 text-center">
+          <h1 class="text-2xl font-bold">GM醉西游</h1>
+          <div class="post-title-bar mx-auto rounded mt-4"></div>
+          <div class="text-gray-400 mt-4">2022.10.08</div>
+          <div class="flex justify-center mt-4">
+            
+              <a href="https://98may2.xyz/tags/game" class="inline-flex items-center mr-4 text-sm text-gray-600">
+                <span class="mr-1">#</span>游戏攻略
+              </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sticky-bar" class="w-full sticky top-0 z-10 bg-white" style="height: 64px;"></div>
+    <div class="p-4 md:p-16 bg-white">
+      <div class="max-w-2xl mx-auto px-4 flex relative">
+        <section class="post-content flex-1 default-post-content max-w-2xl">
+          <div v-pre>
+            <p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%BF%85%E6%8B%BF%E7%A4%BC%E5%8C%85">必拿礼包</a></li>
+<li><a href="#%E7%9F%B3%E5%A4%B4">石头</a></li>
+<li><a href="#%E5%85%83%E7%A5%9E">元神</a></li>
+<li><a href="#%E8%A3%85%E5%A4%87%E5%93%81%E8%B4%A8">装备品质</a></li>
+<li><a href="#%E5%85%B6%E4%BB%96%E7%9F%A5%E8%AF%86">其他知识</a></li>
+<li><a href="#%E7%A7%B0%E5%8F%B7%E5%90%8D%E4%BA%BA%E5%A0%82">称号（名人堂）</a></li>
+<li><a href="#%E6%88%98%E5%8A%9B">战力</a>
+<ul>
+<li><a href="#%E6%8A%80%E8%83%BD">技能</a></li>
+<li><a href="#%E5%AE%A0%E7%89%A9">宠物</a>
+<ul>
+<li><a href="#%E8%A2%AB%E5%8A%A8%E6%8A%80%E8%83%BD">被动技能</a></li>
+<li><a href="#%E4%B8%BB%E5%8A%A8%E6%8A%80%E8%83%BD">主动技能</a></li>
+<li><a href="#%E5%AE%A0%E7%89%A9%E8%B5%84%E8%B4%A8">宠物资质</a></li>
+</ul>
+</li>
+<li><a href="#%E8%A3%85%E5%A4%87">装备</a>
+<ul>
+<li><a href="#%E8%A3%85%E5%A4%87%E6%B4%97%E7%82%BC">装备洗炼</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BB%99%E7%BC%98">仙缘</a></li>
+<li><a href="#%E6%B3%A8%E7%81%B5">注灵</a>
+<ul>
+<li><a href="#%E6%AD%A6%E5%99%A8%E6%B3%A8%E7%81%B5">武器注灵</a></li>
+<li><a href="#%E9%99%84%E9%AD%94">附魔</a></li>
+</ul>
+</li>
+<li><a href="#%E5%85%83%E7%A5%9E-2">元神</a>
+<ul>
+<li><a href="#%E4%BF%AE%E7%82%BC%E5%85%83%E7%A5%9E">修炼元神</a></li>
+<li><a href="#%E6%8F%90%E5%8D%87%E5%A2%83%E7%95%8C">提升境界</a></li>
+</ul>
+</li>
+<li><a href="#%E9%A3%9E%E8%A1%8C%E5%99%A8">飞行器</a></li>
+<li><a href="#%E5%9D%90%E9%AA%91">坐骑</a></li>
+<li><a href="#%E7%A5%9E%E7%A7%98%E5%95%86%E5%BA%97">神秘商店</a></li>
+</ul>
+</li>
+<li><a href="#0%E6%B0%AA">0氪</a>
+<ul>
+<li><a href="#%E6%AF%8F%E6%97%A5%E5%BF%85%E5%81%9A">每日必做</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</p>
+<blockquote>
+<p>所需权限：全区权限</p>
+</blockquote>
+<h2 id="必拿礼包">必拿礼包</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">首冲礼包</th>
+<th style="text-align:center">88元礼包</th>
+<th style="text-align:center">288元礼包</th>
+<th style="text-align:center">588元礼包</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">988元礼包</td>
+<td style="text-align:center">1988元礼包</td>
+<td style="text-align:center">充值礼包</td>
+<td style="text-align:center">礼包</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">首冲礼包</th>
+<th style="text-align:center">88元礼包</th>
+<th style="text-align:center">288元礼包</th>
+<th style="text-align:center">588元礼包</th>
+<th style="text-align:center">988元礼包</th>
+<th style="text-align:center">1988元礼包</th>
+<th style="text-align:center">充值礼包</th>
+<th style="text-align:center">礼包</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">紫水晶</td>
+<td style="text-align:center">风雷时装礼盒</td>
+<td style="text-align:center">紫霄狂雷时装变幻卷</td>
+<td style="text-align:center">紫霄雷翼变幻卷</td>
+<td style="text-align:center">虎虎生威时装变幻卷</td>
+<td style="text-align:center">炫彩棒棒糖变幻卷</td>
+<td style="text-align:center">罗刹春暖芳菲时装</td>
+<td style="text-align:center">妙法莲华变幻卷</td>
+</tr>
+<tr>
+<td style="text-align:center">风雷羽翼礼盒</td>
+<td style="text-align:center">3级幸运符</td>
+<td style="text-align:center">4级幸运符</td>
+<td style="text-align:center">5级幸运符</td>
+<td style="text-align:center">6级幸运符</td>
+<td style="text-align:center">追风白虎幻化卡</td>
+<td style="text-align:center">红莲之戒变幻卷</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">狂雷之戒</td>
+<td style="text-align:center">初级境界成长符×10</td>
+<td style="text-align:center">4级强化石×3</td>
+<td style="text-align:center">宠物资质符</td>
+<td style="text-align:center">宠物资质符×2</td>
+<td style="text-align:center">宠物资质符×3</td>
+<td style="text-align:center">宠物资质符</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">狂雷护符</td>
+<td style="text-align:center">40级装备碎片×10</td>
+<td style="text-align:center">4级陨铁×3</td>
+<td style="text-align:center">紫色洗炼石×18</td>
+<td style="text-align:center">紫色洗炼石×38</td>
+<td style="text-align:center">紫色洗炼石×58</td>
+<td style="text-align:center">中型气血包×3</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">中级宠物成长丹×10</td>
+<td style="text-align:center">洗炼锁×5</td>
+<td style="text-align:center">玄冰石×3</td>
+<td style="text-align:center">初级境界成长符×10</td>
+<td style="text-align:center">中级境界成长符×10</td>
+<td style="text-align:center">高级境界成长符×10</td>
+<td style="text-align:center">中型法力包×3</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">中级宠物修行卷×10</td>
+<td style="text-align:center">中型气血包×2</td>
+<td style="text-align:center">中型气血包×3</td>
+<td style="text-align:center">大型气血包×2</td>
+<td style="text-align:center">大型气血包×3</td>
+<td style="text-align:center">大型气血包×5</td>
+<td style="text-align:center">绑定铜币×188888</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">海底珍宝卷轴×5</td>
+<td style="text-align:center">中型法力包×2</td>
+<td style="text-align:center">中型法力包×3</td>
+<td style="text-align:center">大型法力包×2</td>
+<td style="text-align:center">大型法力包×3</td>
+<td style="text-align:center">大型法力包×5</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">4级强化石</td>
+<td style="text-align:center">中型宠物口粮×20</td>
+<td style="text-align:center">中型宠物口粮×20</td>
+<td style="text-align:center">中型宠物口粮×20</td>
+<td style="text-align:center">中型宠物口粮×20</td>
+<td style="text-align:center">中型宠物口粮×20</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">高级经验符×5</td>
+<td style="text-align:center">绑定铜币×88888</td>
+<td style="text-align:center">绑定铜币×88888</td>
+<td style="text-align:center">绑定铜币×188888</td>
+<td style="text-align:center">绑定铜币×188888</td>
+<td style="text-align:center">绑定铜币×288888</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="石头">石头</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">数量</th>
+<th style="text-align:center">熔炼组合</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">9级真元</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">9级熔炼</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">9级气血</td>
+<td style="text-align:center">24</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">9级攻击</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">9级防御</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">气血+防御</td>
+</tr>
+<tr>
+<td style="text-align:center">9级闪避</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">气血+闪避</td>
+</tr>
+<tr>
+<td style="text-align:center">9级坚韧</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">气血+坚韧</td>
+</tr>
+<tr>
+<td style="text-align:center">9级暴击</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">攻击+暴击</td>
+</tr>
+<tr>
+<td style="text-align:center">9级命中</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">攻击+命中</td>
+</tr>
+</tbody>
+</table>
+<h2 id="元神">元神</h2>
+<p>封魔录、境界提升（境界保护符）最高20级、共200级</p>
+<h2 id="装备品质">装备品质</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">初级荒兽血</th>
+<th style="text-align:center">中级荒兽血</th>
+<th style="text-align:center">高级荒兽血</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">336</td>
+<td style="text-align:center">576</td>
+<td style="text-align:center">672</td>
+</tr>
+</tbody>
+</table>
+<h2 id="其他知识">其他知识</h2>
+<p>玄冰石：很多地方都要用到，最好每十级刷100个</p>
+<p>装备碎片&gt;陨铁：碎片用得比较多，打封魔录也可以获得</p>
+<p>超级宠物修行卷：增加宠物潜能</p>
+<p>坐骑资质丹：提升坐骑资质等级，最高神级</p>
+<p>坐骑进阶符：提升坐骑进阶等级，最多十二阶</p>
+<p>紫水晶、橙水晶：进阶装备为真装备</p>
+<p>洗炼：装备+项链+戒指×2＝攻击最好洗最高数值，防具六件套+护符×2＝气血最好洗最高数值</p>
+<p>宠物成长、宠物等级、宠物潜能，最高80（可以卡到81，看情况）</p>
+<p>65级就可学习宠物技能到4级</p>
+<p>宠物技能书：攻击、气血、防御、闪避、命中、雷抗、冥抗、水抗</p>
+<p>宠物资质符：宠物资质最高为1100点</p>
+<p>11级幸运符、12级幸运符：19个<code>人物装备×12+时装×6+坐骑×1＝19</code></p>
+<h2 id="称号名人堂">称号（名人堂）</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">称号</th>
+<th style="text-align:center">描述</th>
+<th style="text-align:center">获得方式</th>
+<th style="text-align:center">权限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">第一面旗</td>
+<td style="text-align:center">第一个建立帮会</td>
+<td style="text-align:center">Lv.24建立帮会</td>
+<td style="text-align:center">铜币或元宝</td>
+</tr>
+<tr>
+<td style="text-align:center">我爱钻石</td>
+<td style="text-align:center">第一个镶嵌5级宝石</td>
+<td style="text-align:center">Lv.36宝石功能</td>
+<td style="text-align:center">9级石头</td>
+</tr>
+<tr>
+<td style="text-align:center">领军天下</td>
+<td style="text-align:center">第一个战力达到8000</td>
+<td style="text-align:center">🈚️攻略</td>
+<td style="text-align:center">🈚️</td>
+</tr>
+<tr>
+<td style="text-align:center">成就达人</td>
+<td style="text-align:center">第一个成就达到1000点数</td>
+<td style="text-align:center">🈚️攻略</td>
+<td style="text-align:center">🈚️</td>
+</tr>
+<tr>
+<td style="text-align:center">不灭元神</td>
+<td style="text-align:center">第一个元神总等级超过200</td>
+<td style="text-align:center">Lv.38封魔录挑战</td>
+<td style="text-align:center">购买VIP免修炼CD</td>
+</tr>
+<tr>
+<td style="text-align:center">宝贝来了</td>
+<td style="text-align:center">第一个宠物成长达到40</td>
+<td style="text-align:center">Lv.35开启批量</td>
+<td style="text-align:center">元宝</td>
+</tr>
+<tr>
+<td style="text-align:center">真有一套</td>
+<td style="text-align:center">第一个穿戴紫色套装全部部件</td>
+<td style="text-align:center">Lv.40</td>
+<td style="text-align:center">元宝</td>
+</tr>
+<tr>
+<td style="text-align:center">匠心第一</td>
+<td style="text-align:center">第一个将武器强化到7级</td>
+<td style="text-align:center">Lv.25铸造功能</td>
+<td style="text-align:center">强化石、幸运符</td>
+</tr>
+</tbody>
+</table>
+<h2 id="战力">战力</h2>
+<h3 id="技能">技能</h3>
+<p>请各位务必先把你的技能都升级哦！这可是最开始就有的战力啊！<code>历练优先用来升级技能等级！</code></p>
+<h3 id="宠物">宠物</h3>
+<h4 id="被动技能">被动技能</h4>
+<p>首先是宠物，GM版基本都是只能弄到80的等级、80的成长、80的潜能</p>
+<p>然而有些人，为什么相同的等级、成长、潜能，却会比其他人差呢？</p>
+<p>区别在于宠物学习的被动技能！</p>
+<p>通常，人们懒得去刷，而刷道具的权限里有用的只有5个，其他都是没用的（PS.加得很少）</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">有用的</th>
+<th style="text-align:center">没用的</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">气血、攻击、防御、闪避、命中</td>
+<td style="text-align:center">暴击、坚韧</td>
+</tr>
+</tbody>
+</table>
+<p>这些是权限里能刷到的宠物被动技能书</p>
+<blockquote>
+<p>Q.真的有那么大的差距吗？<br>
+A.同样是80等级成长潜能，刷了暴击坚韧＋某一种抗的宠物，最终只有20041的战力，惨不忍睹<br>
+而刷了雷抗、冥抗、水抗的宠物，则有20381的战力，每一只相差340战力，三只加起来就是1020战力了<br>
+也许会觉得没差多少，其实是差了很多！</p>
+</blockquote>
+<p>冥抗、雷抗、水抗<code>请努力刷神秘商店</code></p>
+<h4 id="主动技能">主动技能</h4>
+<p>说实话，除了幽冥决和青龙诀，其它基本没用</p>
+<p>但由于主动技能不会增加可观的战力，所以忽略也是可以的</p>
+<h4 id="宠物资质">宠物资质</h4>
+<p>宠物资质也是可以提升的，加的战力也很可观，记得去拿资质符！</p>
+<h3 id="装备">装备</h3>
+<p>只要弄好这些就可以：强化、洗炼、升级、进阶、品质</p>
+<h4 id="装备洗炼">装备洗炼</h4>
+<p>很多人都是等到80级或者85级才开始洗炼装备</p>
+<p>朋友！80级起洗炼左边的期望属性就不管用了！</p>
+<blockquote>
+<p>因为80级最佳是橙色20星数值、而我们在70级或75级刷的最佳属性是橙色15星的，所以期望数值那边设置了，也只会给你蓝色的，因为他们没有调整数值为20星的数值，所以很费劲！</p>
+</blockquote>
+<p><code>最好的方法就是在70级或75级的时候，将全身装备的额外技能都刷到Lv.30</code></p>
+<blockquote>
+<p>60级也可以洗炼，额外加成Lv.20</p>
+</blockquote>
+<p>然后80级或85级的时候，手动挑选洗出来的数值！</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">武器、戒指、项链</th>
+<th style="text-align:center">六防具、护符</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">攻击</td>
+<td style="text-align:center">气血</td>
+</tr>
+</tbody>
+</table>
+<h3 id="仙缘">仙缘</h3>
+<p>可以自己弄个小号，顺便刷成就（送花成就）</p>
+<p>仙缘加的其实也是不少的，可以拿来当战力<code>修炼最高等级：70级</code></p>
+<h3 id="注灵">注灵</h3>
+<h4 id="武器注灵">武器注灵</h4>
+<p>这个也是个可以选择的加战力途径，有多余的历练可以用在这里</p>
+<h4 id="附魔">附魔</h4>
+<p>加的四个属性都很不错，是角色的最基础属性</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">力量</th>
+<th style="text-align:center">灵力</th>
+<th style="text-align:center">身法</th>
+<th style="text-align:center">体质</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">影响攻击</td>
+<td style="text-align:center">影响命中</td>
+<td style="text-align:center">影响闪避</td>
+<td style="text-align:center">影响气血、法力、防御</td>
+</tr>
+</tbody>
+</table>
+<h3 id="元神-2">元神</h3>
+<h4 id="修炼元神">修炼元神</h4>
+<p>我看到好多人都不打封魔录，然后也不修炼元神，我就直接无语了</p>
+<p>元神加得是最多，而且最不费劲的了，只要你把序章~第五章都打完，你就每天只需要挂机一次，就能收获满满的战力，为什么不要呢？</p>
+<h4 id="提升境界">提升境界</h4>
+<p>这个倒是人人都会搞，为什么你们不搞修炼元神啊？？？白 搞 了 ！</p>
+<h3 id="飞行器">飞行器</h3>
+<p>60级开启的功能，最后一个<code>九天凤凰</code>条件比较有难度，就是把前面9个都升星到神级才能激活它</p>
+<p>其实是属于血赚不亏的，前面全都开了也都是好事，加的战力都不少</p>
+<h3 id="坐骑">坐骑</h3>
+<p>强化是人人都第一个搞的，进阶是人人都会的，资质大家也都有弄，挺好的，没什么特别的地方</p>
+<h3 id="神秘商店">神秘商店</h3>
+<p>购买灵魂碎片1000幸运值以内能刷出（约一颗星星）超出一颗星星，出现率较低</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">祝福值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">技能残册</td>
+<td style="text-align:center">380</td>
+</tr>
+<tr>
+<td style="text-align:center">技能残页</td>
+<td style="text-align:center">13</td>
+</tr>
+<tr>
+<td style="text-align:center">技能残卷</td>
+<td style="text-align:center">26</td>
+</tr>
+<tr>
+<td style="text-align:center">勿忘索</td>
+<td style="text-align:center">130</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">等级</th>
+<th style="text-align:center">技能书</th>
+<th style="text-align:center">所需祝福值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Lv.3</td>
+<td style="text-align:center">幽冥决</td>
+<td style="text-align:center">51×380+36×13+26×26</td>
+</tr>
+<tr>
+<td style="text-align:center">Lv.4</td>
+<td style="text-align:center">幽冥决</td>
+<td style="text-align:center">97×380+67×13+48×26</td>
+</tr>
+<tr>
+<td style="text-align:center">Lv.3</td>
+<td style="text-align:center">青龙诀</td>
+<td style="text-align:center">77×380+54×13+39×26</td>
+</tr>
+<tr>
+<td style="text-align:center">Lv.4</td>
+<td style="text-align:center">青龙诀</td>
+<td style="text-align:center">145×380+101×13+72×26</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">技能格子</th>
+<th style="text-align:center">勿忘索</th>
+<th style="text-align:center">数量（1）</th>
+<th style="text-align:center">祝福值</th>
+<th style="text-align:center">数量（2）</th>
+<th style="text-align:center">祝福值</th>
+<th style="text-align:center">数量（3）</th>
+<th style="text-align:center">祝福值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">被动8格</td>
+<td style="text-align:center">4+8+12+16+20+24+28</td>
+<td style="text-align:center">112</td>
+<td style="text-align:center">14560</td>
+<td style="text-align:center">224</td>
+<td style="text-align:center">29120</td>
+<td style="text-align:center">336</td>
+<td style="text-align:center">43680</td>
+</tr>
+<tr>
+<td style="text-align:center">主动2格</td>
+<td style="text-align:center">32+36</td>
+<td style="text-align:center">68</td>
+<td style="text-align:center">8840</td>
+<td style="text-align:center">136</td>
+<td style="text-align:center">17680</td>
+<td style="text-align:center">204</td>
+<td style="text-align:center">26520</td>
+</tr>
+<tr>
+<td style="text-align:center">被动5格</td>
+<td style="text-align:center">4+8+12+16</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">5200</td>
+<td style="text-align:center">80</td>
+<td style="text-align:center">10400</td>
+<td style="text-align:center">120</td>
+<td style="text-align:center">15600</td>
+</tr>
+<tr>
+<td style="text-align:center">被动3格+主动2格</td>
+<td style="text-align:center">20+24+28+32+36</td>
+<td style="text-align:center">140</td>
+<td style="text-align:center">18200</td>
+<td style="text-align:center">280</td>
+<td style="text-align:center">36400</td>
+<td style="text-align:center">420</td>
+<td style="text-align:center">54600</td>
+</tr>
+<tr>
+<td style="text-align:center">被动8格+主动2格</td>
+<td style="text-align:center">4+8+12+16+20+24+28+32+36</td>
+<td style="text-align:center">180</td>
+<td style="text-align:center">23400</td>
+<td style="text-align:center">360</td>
+<td style="text-align:center">46800</td>
+<td style="text-align:center">540</td>
+<td style="text-align:center">70200</td>
+</tr>
+</tbody>
+</table>
+<h2 id="0氪">0氪</h2>
+<h3 id="每日必做">每日必做</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">副本</th>
+<th style="text-align:center">奖励</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">主线任务、支线任务</td>
+<td style="text-align:center">等级到了就做掉</td>
+</tr>
+<tr>
+<td style="text-align:center">封魔录</td>
+<td style="text-align:center">元神、奖励礼包里的材料</td>
+</tr>
+<tr>
+<td style="text-align:center">经验副本</td>
+<td style="text-align:center">大量经验</td>
+</tr>
+<tr>
+<td style="text-align:center">装备副本</td>
+<td style="text-align:center">单人、多人</td>
+</tr>
+<tr>
+<td style="text-align:center">宠物副本</td>
+<td style="text-align:center">少量经验、宠物材料</td>
+</tr>
+<tr>
+<td style="text-align:center">铜钱副本</td>
+<td style="text-align:center">铜币、少量经验</td>
+</tr>
+<tr>
+<td style="text-align:center">护送美女</td>
+<td style="text-align:center">双倍或不双倍都可以，进度快慢罢了</td>
+</tr>
+<tr>
+<td style="text-align:center">VIP副本</td>
+<td style="text-align:center">VIP经验</td>
+</tr>
+<tr>
+<td style="text-align:center">每日福利→宠物砸蛋</td>
+<td style="text-align:center">根据宠物资质决定经验，花100元宝抱经验回家</td>
+</tr>
+<tr>
+<td style="text-align:center">帮派试炼</td>
+<td style="text-align:center">根据任务品质决定经验</td>
+</tr>
+<tr>
+<td style="text-align:center">皇榜任务</td>
+<td style="text-align:center">每天20次，刷橙色任务吃经验</td>
+</tr>
+<tr>
+<td style="text-align:center">阵营任务</td>
+<td style="text-align:center">反正会刷怪，接着也不浪费</td>
+</tr>
+<tr>
+<td style="text-align:center">诛妖帖</td>
+<td style="text-align:center">刷怪任务，能接高品质就接高品质</td>
+</tr>
+</tbody>
+</table>
+
+          </div>
+          <div class="py-4 text-gray-600 flex items-center justify-between">
+            <div class="">
+              <div class="text-sm text-gray-300">最后更新于: </div>
+              <div class="text-base font-medium">2022.10.10</div>
+            </div>
+            <!-- <div class="flex items-center text-sm text-gray-600">
+              <i class="ri-eye-line"></i> <span class="ml-2">{{ views }}</span>
+            </div> -->
+          </div>
+          <div>
+            <div id="disqus_thread"></div>
+          </div>
+        </section>
+        
+          <!-- <aside class="sticky toc-container flex-shrink-0 hidden md:block">
+            <div class="text-gray-600 mb-4">目 录</div>
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%BF%85%E6%8B%BF%E7%A4%BC%E5%8C%85">必拿礼包</a></li>
+<li><a href="#%E7%9F%B3%E5%A4%B4">石头</a></li>
+<li><a href="#%E5%85%83%E7%A5%9E">元神</a></li>
+<li><a href="#%E8%A3%85%E5%A4%87%E5%93%81%E8%B4%A8">装备品质</a></li>
+<li><a href="#%E5%85%B6%E4%BB%96%E7%9F%A5%E8%AF%86">其他知识</a></li>
+<li><a href="#%E7%A7%B0%E5%8F%B7%E5%90%8D%E4%BA%BA%E5%A0%82">称号（名人堂）</a></li>
+<li><a href="#%E6%88%98%E5%8A%9B">战力</a>
+<ul>
+<li><a href="#%E6%8A%80%E8%83%BD">技能</a></li>
+<li><a href="#%E5%AE%A0%E7%89%A9">宠物</a>
+<ul>
+<li><a href="#%E8%A2%AB%E5%8A%A8%E6%8A%80%E8%83%BD">被动技能</a></li>
+<li><a href="#%E4%B8%BB%E5%8A%A8%E6%8A%80%E8%83%BD">主动技能</a></li>
+<li><a href="#%E5%AE%A0%E7%89%A9%E8%B5%84%E8%B4%A8">宠物资质</a></li>
+</ul>
+</li>
+<li><a href="#%E8%A3%85%E5%A4%87">装备</a>
+<ul>
+<li><a href="#%E8%A3%85%E5%A4%87%E6%B4%97%E7%82%BC">装备洗炼</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BB%99%E7%BC%98">仙缘</a></li>
+<li><a href="#%E6%B3%A8%E7%81%B5">注灵</a>
+<ul>
+<li><a href="#%E6%AD%A6%E5%99%A8%E6%B3%A8%E7%81%B5">武器注灵</a></li>
+<li><a href="#%E9%99%84%E9%AD%94">附魔</a></li>
+</ul>
+</li>
+<li><a href="#%E5%85%83%E7%A5%9E-2">元神</a>
+<ul>
+<li><a href="#%E4%BF%AE%E7%82%BC%E5%85%83%E7%A5%9E">修炼元神</a></li>
+<li><a href="#%E6%8F%90%E5%8D%87%E5%A2%83%E7%95%8C">提升境界</a></li>
+</ul>
+</li>
+<li><a href="#%E9%A3%9E%E8%A1%8C%E5%99%A8">飞行器</a></li>
+<li><a href="#%E5%9D%90%E9%AA%91">坐骑</a></li>
+<li><a href="#%E7%A5%9E%E7%A7%98%E5%95%86%E5%BA%97">神秘商店</a></li>
+</ul>
+</li>
+<li><a href="#0%E6%B0%AA">0氪</a>
+<ul>
+<li><a href="#%E6%AF%8F%E6%97%A5%E5%BF%85%E5%81%9A">每日必做</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </aside> -->
+        
+      </div>
+    </div>
+    <div class="py-8 text-gray-300 text-center border-t border-gray-200">
+  Powered by Gridea
+</div>
+  </div>
+
+  <script src="//cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  
+  <script src="//cdn.jsdelivr.net/npm/@gridea/theme@1.0.8/js/main.js"></script>
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+    
+  
+</body>
+</html>

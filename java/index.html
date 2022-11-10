@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" style="--theme-color: #262626; --link-color: #262626;">
+<head>
+  <meta charset="UTF-8">
+  <title>Java - My Blog</title>
+
+  <link rel="icon" href="">
+<!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> -->
+<link rel="alternate" type="application/atom+xml" title="My Blog - Atom Feed" href="https://98may2.xyz/atom.xml">
+
+  
+
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFCRR8Q57W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script> -->
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-182385326-1');
+    ga('set', 'dimension1', 'site/yE4bklzbb');
+    ga('set', 'dimension2', 'post/VaRiZRern');
+    ga('send', 'pageview');
+    // gtag('set', {
+    //   'custom_map': {
+    //     'dimension1': 'siteId',
+    //     'dimension2': 'postId',
+    //   }
+    // })
+
+    // gtag('config', 'G-NFCRR8Q57W', {
+    //   'siteId': 'site/yE4bklzbb',
+    //   'postId': 'post/VaRiZRern',
+    // });
+  </script>
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="记录">
+
+  <meta property="og:title" content="Java - My Blog">
+  <meta property="og:description" content="记录">
+  
+  <meta property="og:url" content="https://98may2.xyz/java/">
+  <meta property="og:site_name" content="My Blog">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Java">
+
+  <meta name="gridea:post_id" content="VaRiZRern">
+
+  <link rel="canonical" href="https://98may2.xyz/java">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.0.3/styles/a11y-light.css">
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@gridea/theme@1.0.8/css/main.css">
+
+</head>
+<body>
+  
+    
+  
+  <div id="page">
+    <div class="mb-16 sticky top-0 z-20 bg-white">
+  <header class="py-4 flex items-baseline justify-between max-w-2xl mx-auto px-2">
+    <h1 class="text-lg text-center font-medium px-4 md:px-0 flex items-center">
+      <div class="site-logo-text font-normal">M</div>
+      <a href="/">My Blog</a>
+    </h1>
+    <div class="hidden sm:flex justify-center">
+      
+        
+        <a
+          href="/about"
+          class="mx-2 text-base border-b border-transparent"
+          
+        >关于本站</a>
+        
+          <span class="text-gray-200">/</span>
+        
+      
+        
+        <a
+          href="/links"
+          class="mx-2 text-base border-b border-transparent"
+          
+        >链接</a>
+        
+      
+    </div>
+    <div class="flex sm:hidden py-2 px-4 text-center cursor-pointer" @click="openMenu = true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg>
+    </div>
+  </header>
+
+  <div class="fixed top-0 right-0 bottom-0 left-0 bg-white hidden" :style="{
+    display: openMenu ? 'block !important' : 'none',
+  }" v-if="openMenu">
+    <div class="py-4 px-2 flex justify-end" @click="openMenu = false">
+      <div class="flex py-2 px-4 text-center cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></svg>
+      </div>
+    </div>
+    <div class="flex flex-col p-4">
+      
+        
+        <a
+          href="/about"
+          class="mx-2 my-4 text-base border-b border-transparent"
+          
+        >关于本站</a>
+      
+        
+        <a
+          href="/links"
+          class="mx-2 my-4 text-base border-b border-transparent"
+          
+        >链接</a>
+      
+    </div>
+  </div>
+</div>
+    <div class="border-b border-gray-200">
+      <div class="max-w-2xl mx-auto px-6 md:px-2">
+        <div class="my-24 text-center">
+          <h1 class="text-2xl font-bold">Java</h1>
+          <div class="post-title-bar mx-auto rounded mt-4"></div>
+          <div class="text-gray-400 mt-4">2022.10.08</div>
+          <div class="flex justify-center mt-4">
+            
+              <a href="https://98may2.xyz/tags/default" class="inline-flex items-center mr-4 text-sm text-gray-600">
+                <span class="mr-1">#</span>未分类
+              </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sticky-bar" class="w-full sticky top-0 z-10 bg-white" style="height: 64px;"></div>
+    <div class="p-4 md:p-16 bg-white">
+      <div class="max-w-2xl mx-auto px-4 flex relative">
+        <section class="post-content flex-1 default-post-content max-w-2xl">
+          <div v-pre>
+            <blockquote>
+<p>视频<br>
+<a href="https://www.bilibili.com/video/BV17F411T7Ao">https://www.bilibili.com/video/BV17F411T7Ao</a><br>
+学习<br>
+<a href="https://zhidao.baidu.com/question/584970024702266045.html">https://zhidao.baidu.com/question/584970024702266045.html</a><br>
+<a href="https://appapi.w3cschool.cn/java/java-loop.html">https://appapi.w3cschool.cn/java/java-loop.html</a></p>
+</blockquote>
+<p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%B8%B8%E7%94%A8cmd%E5%91%BD%E4%BB%A4">常用CMD命令</a>
+<ul>
+<li><a href="#%E7%9B%98%E7%AC%A6%E5%90%8D%E7%A7%B0%E5%86%92%E5%8F%B7">盘符名称＋冒号</a></li>
+<li><a href="#dir">dir</a></li>
+<li><a href="#cd%E7%9B%AE%E5%BD%95">cd目录</a></li>
+<li><a href="#cd">cd..</a></li>
+<li><a href="#%E8%BF%9B%E5%85%A5%E5%A4%9A%E7%BA%A7%E7%9B%AE%E5%BD%95">进入多级目录</a></li>
+<li><a href="#%E8%BF%94%E5%9B%9E%E7%9B%98%E7%AC%A6%E7%9B%AE%E5%BD%95">返回盘符目录</a></li>
+<li><a href="#cls">cls</a></li>
+<li><a href="#exit">exit</a></li>
+</ul>
+</li>
+<li><a href="#%E6%89%93%E5%BC%80%E6%8C%87%E5%AE%9A%E8%BD%AF%E4%BB%B6">打开指定软件</a>
+<ul>
+<li><a href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F">环境变量</a></li>
+</ul>
+</li>
+<li><a href="#jdk%E7%9A%84%E5%AE%89%E8%A3%85%E7%9B%AE%E5%BD%95">JDK的安装目录</a></li>
+<li><a href="#hello-world">Hello World</a>
+<ul>
+<li><a href="#%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3%E7%BC%96%E8%AF%91">如何理解编译？</a></li>
+</ul>
+</li>
+<li><a href="#java-home">Java-Home</a></li>
+<li><a href="#%E5%AD%A6%E4%B9%A0%E8%BF%9B%E5%BA%A6">学习进度</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<h2 id="常用cmd命令">常用CMD命令</h2>
+<h3 id="盘符名称冒号">盘符名称＋冒号</h3>
+<p>切换到×盘</p>
+<h3 id="dir">dir</h3>
+<p>查看当前路径下的内容</p>
+<h3 id="cd目录">cd目录</h3>
+<p>进入单级目录</p>
+<h3 id="cd">cd..</h3>
+<p>返回上级目录</p>
+<h3 id="进入多级目录">进入多级目录</h3>
+<p>cd 目录1\目录2...</p>
+<h3 id="返回盘符目录">返回盘符目录</h3>
+<p>cd \</p>
+<h3 id="cls">cls</h3>
+<p>清屏</p>
+<h3 id="exit">exit</h3>
+<p>退出命令行</p>
+<h2 id="打开指定软件">打开指定软件</h2>
+<h3 id="环境变量">环境变量</h3>
+<p>系统👉高级系统设置👉高级👉环境变量👉新增你常用的软件/文件路径<br>
+打开cmd直接输入你想打开的指定软件</p>
+<h2 id="jdk的安装目录">JDK的安装目录</h2>
+<p>bin：存放了各种工具命令<br>
+conf：存放了相关配置文件<br>
+include：存放了一些平台特定的头文件<br>
+jmods：存放了各种模块<br>
+legal：存放了各模块的授权文档<br>
+lib：存放了工具的一些补充JAR包</p>
+<h2 id="hello-world">Hello World</h2>
+<p>👉用记事本编写程序<br>
+👉编译文件<br>
+👉运行程序</p>
+<pre><code>public class Hello World {
+    public static void main(String[] args){
+        System.out.println(&quot;Hello World&quot;);
+    }
+}
+</code></pre>
+<h3 id="如何理解编译">如何理解编译？</h3>
+<p>把操作系统看不懂的内容<code>翻译成</code>操作系统看得懂的内容</p>
+<p><code>使用Javac进行编译需要带文件后缀，使用Java运行代码不需要带文件后缀</code></p>
+<h2 id="java-home">Java-Home</h2>
+<p><a href="https://www.bilibili.com/video/BV17F411T7Ao?p=10">https://www.bilibili.com/video/BV17F411T7Ao?p=10</a><br>
+一个环境变量</p>
+<h2 id="学习进度">学习进度</h2>
+<p><a href="https://www.bilibili.com/video/BV17F411T7Ao?p=12">https://www.bilibili.com/video/BV17F411T7Ao?p=12</a></p>
+
+          </div>
+          <div class="py-4 text-gray-600 flex items-center justify-between">
+            <div class="">
+              <div class="text-sm text-gray-300">最后更新于: </div>
+              <div class="text-base font-medium">2022.10.10</div>
+            </div>
+            <!-- <div class="flex items-center text-sm text-gray-600">
+              <i class="ri-eye-line"></i> <span class="ml-2">{{ views }}</span>
+            </div> -->
+          </div>
+          <div>
+            <div id="disqus_thread"></div>
+          </div>
+        </section>
+        
+          <!-- <aside class="sticky toc-container flex-shrink-0 hidden md:block">
+            <div class="text-gray-600 mb-4">目 录</div>
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%B8%B8%E7%94%A8cmd%E5%91%BD%E4%BB%A4">常用CMD命令</a>
+<ul>
+<li><a href="#%E7%9B%98%E7%AC%A6%E5%90%8D%E7%A7%B0%E5%86%92%E5%8F%B7">盘符名称＋冒号</a></li>
+<li><a href="#dir">dir</a></li>
+<li><a href="#cd%E7%9B%AE%E5%BD%95">cd目录</a></li>
+<li><a href="#cd">cd..</a></li>
+<li><a href="#%E8%BF%9B%E5%85%A5%E5%A4%9A%E7%BA%A7%E7%9B%AE%E5%BD%95">进入多级目录</a></li>
+<li><a href="#%E8%BF%94%E5%9B%9E%E7%9B%98%E7%AC%A6%E7%9B%AE%E5%BD%95">返回盘符目录</a></li>
+<li><a href="#cls">cls</a></li>
+<li><a href="#exit">exit</a></li>
+</ul>
+</li>
+<li><a href="#%E6%89%93%E5%BC%80%E6%8C%87%E5%AE%9A%E8%BD%AF%E4%BB%B6">打开指定软件</a>
+<ul>
+<li><a href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F">环境变量</a></li>
+</ul>
+</li>
+<li><a href="#jdk%E7%9A%84%E5%AE%89%E8%A3%85%E7%9B%AE%E5%BD%95">JDK的安装目录</a></li>
+<li><a href="#hello-world">Hello World</a>
+<ul>
+<li><a href="#%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3%E7%BC%96%E8%AF%91">如何理解编译？</a></li>
+</ul>
+</li>
+<li><a href="#java-home">Java-Home</a></li>
+<li><a href="#%E5%AD%A6%E4%B9%A0%E8%BF%9B%E5%BA%A6">学习进度</a></li>
+</ul>
+</li>
+</ul>
+
+          </aside> -->
+        
+      </div>
+    </div>
+    <div class="py-8 text-gray-300 text-center border-t border-gray-200">
+  Powered by Gridea
+</div>
+  </div>
+
+  <script src="//cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  
+  <script src="//cdn.jsdelivr.net/npm/@gridea/theme@1.0.8/js/main.js"></script>
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+    
+  
+</body>
+</html>

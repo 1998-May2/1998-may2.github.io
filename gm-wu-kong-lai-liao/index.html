@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en" style="--theme-color: #262626; --link-color: #262626;">
+<head>
+  <meta charset="UTF-8">
+  <title>GM悟空来了 - My Blog</title>
+
+  <link rel="icon" href="">
+<!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> -->
+<link rel="alternate" type="application/atom+xml" title="My Blog - Atom Feed" href="https://98may2.xyz/atom.xml">
+
+  
+
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFCRR8Q57W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script> -->
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-182385326-1');
+    ga('set', 'dimension1', 'site/yE4bklzbb');
+    ga('set', 'dimension2', 'post/kd0SDVRZP');
+    ga('send', 'pageview');
+    // gtag('set', {
+    //   'custom_map': {
+    //     'dimension1': 'siteId',
+    //     'dimension2': 'postId',
+    //   }
+    // })
+
+    // gtag('config', 'G-NFCRR8Q57W', {
+    //   'siteId': 'site/yE4bklzbb',
+    //   'postId': 'post/kd0SDVRZP',
+    // });
+  </script>
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="个人用攻略">
+
+  <meta property="og:title" content="GM悟空来了 - My Blog">
+  <meta property="og:description" content="个人用攻略">
+  
+  <meta property="og:url" content="https://98may2.xyz/gm-wu-kong-lai-liao/">
+  <meta property="og:site_name" content="My Blog">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="GM悟空来了">
+
+  <meta name="gridea:post_id" content="kd0SDVRZP">
+
+  <link rel="canonical" href="https://98may2.xyz/gm-wu-kong-lai-liao">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.0.3/styles/a11y-light.css">
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@gridea/theme@1.0.8/css/main.css">
+
+</head>
+<body>
+  
+    
+  
+  <div id="page">
+    <div class="mb-16 sticky top-0 z-20 bg-white">
+  <header class="py-4 flex items-baseline justify-between max-w-2xl mx-auto px-2">
+    <h1 class="text-lg text-center font-medium px-4 md:px-0 flex items-center">
+      <div class="site-logo-text font-normal">M</div>
+      <a href="/">My Blog</a>
+    </h1>
+    <div class="hidden sm:flex justify-center">
+      
+        
+        <a
+          href="/about"
+          class="mx-2 text-base border-b border-transparent"
+          
+        >关于本站</a>
+        
+          <span class="text-gray-200">/</span>
+        
+      
+        
+        <a
+          href="/links"
+          class="mx-2 text-base border-b border-transparent"
+          
+        >链接</a>
+        
+      
+    </div>
+    <div class="flex sm:hidden py-2 px-4 text-center cursor-pointer" @click="openMenu = true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg>
+    </div>
+  </header>
+
+  <div class="fixed top-0 right-0 bottom-0 left-0 bg-white hidden" :style="{
+    display: openMenu ? 'block !important' : 'none',
+  }" v-if="openMenu">
+    <div class="py-4 px-2 flex justify-end" @click="openMenu = false">
+      <div class="flex py-2 px-4 text-center cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></svg>
+      </div>
+    </div>
+    <div class="flex flex-col p-4">
+      
+        
+        <a
+          href="/about"
+          class="mx-2 my-4 text-base border-b border-transparent"
+          
+        >关于本站</a>
+      
+        
+        <a
+          href="/links"
+          class="mx-2 my-4 text-base border-b border-transparent"
+          
+        >链接</a>
+      
+    </div>
+  </div>
+</div>
+    <div class="border-b border-gray-200">
+      <div class="max-w-2xl mx-auto px-6 md:px-2">
+        <div class="my-24 text-center">
+          <h1 class="text-2xl font-bold">GM悟空来了</h1>
+          <div class="post-title-bar mx-auto rounded mt-4"></div>
+          <div class="text-gray-400 mt-4">2022.10.08</div>
+          <div class="flex justify-center mt-4">
+            
+              <a href="https://98may2.xyz/tags/game" class="inline-flex items-center mr-4 text-sm text-gray-600">
+                <span class="mr-1">#</span>游戏攻略
+              </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sticky-bar" class="w-full sticky top-0 z-10 bg-white" style="height: 64px;"></div>
+    <div class="p-4 md:p-16 bg-white">
+      <div class="max-w-2xl mx-auto px-4 flex relative">
+        <section class="post-content flex-1 default-post-content max-w-2xl">
+          <div v-pre>
+            <p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E6%88%98%E5%8A%9B">战力</a></li>
+<li><a href="#%E7%BB%8F%E9%AA%8C">经验</a></li>
+<li><a href="#%E8%B4%A7%E5%B8%81">货币</a></li>
+<li><a href="#%E5%90%84%E8%81%8C%E4%B8%9A%E6%AF%95%E4%B8%9A%E6%AD%A6%E5%99%A8">各职业毕业武器</a></li>
+<li><a href="#%E5%AE%A0%E7%89%A9">宠物</a></li>
+<li><a href="#%E8%BD%AC%E7%94%9F">转生</a></li>
+<li><a href="#%E5%9D%90%E9%AA%91">坐骑</a>
+<ul>
+<li><a href="#%E5%9D%90%E9%AA%91%E8%BF%9B%E9%98%B6">坐骑进阶</a></li>
+</ul>
+</li>
+<li><a href="#%E8%A3%85%E5%A4%87">装备</a></li>
+<li><a href="#%E5%95%B0%E5%97%A6">啰嗦</a></li>
+<li><a href="#%E7%A7%B0%E5%8F%B7">称号</a></li>
+<li><a href="#0%E6%B0%AA">0氪</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<blockquote>
+<p>所需权限：全区权限<br>
+用了几天摸索出来的绝对实用攻略，属于比较全方面的</p>
+</blockquote>
+<h2 id="战力">战力</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">道具</th>
+<th style="text-align:center">徽章</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">麒麟徽章</td>
+<td style="text-align:center">玄武徽章</td>
+</tr>
+<tr>
+<td style="text-align:center">朱雀徽章</td>
+<td style="text-align:center">青龙徽章</td>
+</tr>
+<tr>
+<td style="text-align:center">白虎徽章</td>
+<td style="text-align:center">补天徽章</td>
+</tr>
+<tr>
+<td style="text-align:center">天神</td>
+<td style="text-align:center">真仙</td>
+</tr>
+<tr>
+<td style="text-align:center">神龙</td>
+<td style="text-align:center">月神</td>
+</tr>
+<tr>
+<td style="text-align:center">圣•</td>
+<td style="text-align:center">真•</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">道具</th>
+<th style="text-align:center">数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">徽章火石</td>
+<td style="text-align:center">3829＝3×999＋832</td>
+</tr>
+<tr>
+<td style="text-align:center">徽章纹石</td>
+<td style="text-align:center">9279＝9×999＋288</td>
+</tr>
+<tr>
+<td style="text-align:center">徽章符石</td>
+<td style="text-align:center">18426＝18×999＋444</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">4</th>
+<th style="text-align:center">8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">9级攻击</td>
+<td style="text-align:center">9级气血</td>
+</tr>
+<tr>
+<td style="text-align:center">9级命中</td>
+<td style="text-align:center">9级防御</td>
+</tr>
+<tr>
+<td style="text-align:center">9级暴击</td>
+<td style="text-align:center">9级闪避</td>
+</tr>
+</tbody>
+</table>
+<p>×色完美符<code>只用于武器，可刷八色九色＋1</code><br>
+×级完美符<code>7-12级完美符＋12</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">道具</th>
+<th style="text-align:center">数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">盘古仙魂</td>
+<td style="text-align:center">60</td>
+</tr>
+<tr>
+<td style="text-align:center">魔法碎片宝箱</td>
+<td style="text-align:center">256</td>
+</tr>
+<tr>
+<td style="text-align:center">五色宝石碎片</td>
+<td style="text-align:center">320</td>
+</tr>
+</tbody>
+</table>
+<h2 id="经验">经验</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">道具</th>
+<th style="text-align:center">等级限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">仙丹</td>
+<td style="text-align:center">30级（5个/天）</td>
+</tr>
+<tr>
+<td style="text-align:center">太极真丹</td>
+<td style="text-align:center">38级</td>
+</tr>
+<tr>
+<td style="text-align:center">仙桃</td>
+<td style="text-align:center">40级</td>
+</tr>
+<tr>
+<td style="text-align:center">修仙经验丹</td>
+<td style="text-align:center">55级</td>
+</tr>
+</tbody>
+</table>
+<h2 id="货币">货币</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">绑定元宝</th>
+<th style="text-align:center">绑定铜币</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">红包（20/个）</td>
+<td style="text-align:center">巨型铜币卡（20W/个）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="各职业毕业武器">各职业毕业武器</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">职业</th>
+<th style="text-align:center">武器</th>
+<th style="text-align:center">防具</th>
+<th style="text-align:center">项链</th>
+<th style="text-align:center">戒指护符</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">修罗</td>
+<td style="text-align:center">人皇</td>
+<td style="text-align:center">天帝</td>
+<td style="text-align:center">苍帝</td>
+<td style="text-align:center">皇天</td>
+</tr>
+<tr>
+<td style="text-align:center">卧虎</td>
+<td style="text-align:center">魔神</td>
+<td style="text-align:center">玄魔</td>
+<td style="text-align:center">幽神</td>
+<td style="text-align:center">皇天</td>
+</tr>
+<tr>
+<td style="text-align:center">御天</td>
+<td style="text-align:center">鲲鹏</td>
+<td style="text-align:center">烛龙</td>
+<td style="text-align:center">狴犴</td>
+<td style="text-align:center">皇天</td>
+</tr>
+</tbody>
+</table>
+<h2 id="宠物">宠物</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">特大修行经验丹</th>
+<th style="text-align:center">巨型仙宠经验丹</th>
+<th style="text-align:center">特大升阶经验丹</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">增加修行经验</td>
+<td style="text-align:center">增加仙宠等级</td>
+<td style="text-align:center">999×2＋217</td>
+</tr>
+</tbody>
+</table>
+<p>仙宠战力：仙宠力量丹、仙宠灵力丹、仙宠身法丹、仙宠体质丹、仙宠元魂丹</p>
+<h2 id="转生">转生</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">转生灵丹</th>
+<th style="text-align:center">转生仙丹</th>
+<th style="text-align:center">特贡修为神丹</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">增加少许战力</td>
+<td style="text-align:center">增加很多战力</td>
+<td style="text-align:center">增加转生经验（Lv.125）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="坐骑">坐骑</h2>
+<h3 id="坐骑进阶">坐骑进阶</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">一阶坐骑灵珠</th>
+<th style="text-align:center">二阶坐骑灵珠</th>
+<th style="text-align:center">三阶坐骑灵珠</th>
+<th style="text-align:center">（四阶~十二阶）×阶坐骑灵珠</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">20</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">80</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">坐骑元丹</th>
+<th style="text-align:center">坐骑神丹</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">增加少许战力</td>
+<td style="text-align:center">增加很多战力</td>
+</tr>
+</tbody>
+</table>
+<h2 id="装备">装备</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">90级装备附魂</th>
+<th style="text-align:center">一整套数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">战神魂石＝7×999＋435</td>
+<td style="text-align:center">金刚魂石＝7×999＋435</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">装备品质</th>
+<th style="text-align:center">装备精炼</th>
+<th style="text-align:center">转生神兵</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">龙魂晶石</td>
+<td style="text-align:center">五彩晶石</td>
+<td style="text-align:center">武魂晶石</td>
+</tr>
+<tr>
+<td style="text-align:center">千年寒铁</td>
+<td style="text-align:center">万年寒铁</td>
+<td style="text-align:center">绝世寒铁</td>
+</tr>
+</tbody>
+</table>
+<h2 id="啰嗦">啰嗦</h2>
+<p>每天许愿币＝930×2＋920（实则930×3，由于游戏里每天都会免费给10个，嫌麻烦可以直接930×3）</p>
+<p>如果不想要成品套装，自己刷乌金和玄铁，每隔十级至少递增200，可以每个等级都刷500个（可保证够用）玄铁用得比较多。高级是90级~125级，要刷很多（建议999走起）</p>
+<p>11级、12级强化石头至尊强化石＝10级强化石＋＋龙魂晶石＋2（10级强化石＝16个6级强化石）<br>
+384个6级强化石＋48个龙魂晶石就能搓出24个至尊强化石，够用了</p>
+<p>洗炼属性：</p>
+<p>武器＋戒指＋2＋项链＝<code>攻击771</code>（红色32星）</p>
+<p>防具六件套＋护符＋2＝<code>气血7737</code>（红色32星）</p>
+<h2 id="称号">称号</h2>
+<p>|稀有称号|第一个完成可获得|等级限制|所需道具（GM权限）|<br>
+|匠心独运|第一个将武器强化到9级|🈚️或Lv.35|×色完美符（武器专用）、×级强化石|<br>
+|仙家灵宠|第一个仙成长达到20|🈚️|特大升阶经验丹＝999×2＋217|<br>
+|悉天神脉|第一个神脉进阶总等级超过200|Lv.61|巨型铜币卡＝999＋…＋999|<br>
+|练级狂人|第一个人物达到55|Lv.55|太极真丹、仙桃、修仙经验丹|<br>
+|开天辟地|第一个战力达到200000|🈚️|麒麟徽章、玄武徽章、朱雀徽章、青龙徽章、白虎徽章|<br>
+|神来之石|第一个镶嵌7级宝石|Lv.38|9级：攻击、命中、暴击＋4，气血、防御、闪避＋8|<br>
+|号令天下|第一个建立帮会|Lv.24|元宝或铜币|<br>
+|高朋满座|第一个拥有200个好友|🈚️|暂无获得例子|</p>
+<h2 id="0氪">0氪</h2>
+<p>今天来写个0氪玩GM悟空来了</p>
+<p>就用平台给的资源，不过因为平台给的资源有限啊，所以也没办法玩得很嗨的，这时候除非有人赠与元宝（游戏里的市场功能可以用，就是废铜币）</p>
+<p>所以我这个攻略呢，其实也是有点算养小号攻略的，事不宜迟，那就开始了！</p>
+<p>进游戏创建角色后，可以通过平台领取新手福利，我这个平台只给1万元宝，还有进游戏就有10万绑定元宝、1亿绑定铜币、1千元宝</p>
+<p>进入游戏后，领取了新手福利，目前元宝1万1</p>
+<p>打开开服活动，里面有个每日首充，趁着刚领新手福利，都给领了先</p>
+<p>下面这个是累充送礼的</p>
+<p>领完了这个还有下面的充值大返利</p>
+<p>虽然充值返利只能领这俩个，但是也赚了，5千呢！可以让我多买2个宝箱了</p>
+<p>新手福利给的1万元宝能领取这些奖励，还算是不错的，很多好用的道具</p>
+<p>拿完可以领取的奖励之后，就要开始做主线了</p>
+<p>什么都能不做，就是不能不做主线</p>
+<p>主线给的东西是道具不可比拟的，经验多、历练也多、还能拿到一些小箱子（开出道具）</p>
+<p>30级的时候，就用上面拿到的仙玉换5个仙丹，在兑换商店里换</p>
+<p>至于为什么换5个，是因为此仙丹每天限制使用不能超过5个</p>
+<p>同时还有经验祝福，这个也是增加经验的好道具</p>
+<p>一般30级的时候吃这两个，你就不用担心卡经验卡得太严重了，因为跟着主线走，会让你进经验副本打，这时候打完基本都36~38级了</p>
+<blockquote>
+<p>Q.经验祝福从哪获得<br>
+A.看道具简介</p>
+</blockquote>
+<p>养小号，很好说，因为你可以通过30级开启的市场，把东西卖给你的小号</p>
+<p>也可以通过25级开启的帮派，放到帮派仓库里给予你的小号</p>
+<p>小号一般缺元宝较多，但是有的时候可以直接买现成的道具（洗练石、洗练锁、宠物蛋…）</p>
+<p>48级开启魔法石功能，这是一个增加战力的功能，增加效果很明显，5种颜色宝石碎片</p>
+<p>我用小号搞了5个魔法碎片宝箱（售价：2500元宝，打开给5种碎片各500个）</p>
+<p>整了30万战力，牛不牛？肯定牛，满级是100，可加300万战力</p>
+<p>有的时候整装备啊、整战力都会缺铜币，那么从哪弄比较快？特别是这种没有刷道具的情况下</p>
+<p>从这里买，是绑定铜币，如果要不绑定铜币的话，请右转商城👉常用道具购买</p>
+<p>44级会开通一个跑环任务，给神器碎片，可以合成其它道具，跑环任务有个跑环任务替身可以帮你快速完成10环任务，制作材料是任务令（售价：10绑定元宝、5元宝）</p>
+<p>还有点金活动，也是可以要的，因为它不仅绑定元宝和绑定铜币，还会给徽章，虽然徽章可能加的不多，但是也是不少的战力！</p>
+
+          </div>
+          <div class="py-4 text-gray-600 flex items-center justify-between">
+            <div class="">
+              <div class="text-sm text-gray-300">最后更新于: </div>
+              <div class="text-base font-medium">2022.10.10</div>
+            </div>
+            <!-- <div class="flex items-center text-sm text-gray-600">
+              <i class="ri-eye-line"></i> <span class="ml-2">{{ views }}</span>
+            </div> -->
+          </div>
+          <div>
+            <div id="disqus_thread"></div>
+          </div>
+        </section>
+        
+          <!-- <aside class="sticky toc-container flex-shrink-0 hidden md:block">
+            <div class="text-gray-600 mb-4">目 录</div>
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E6%88%98%E5%8A%9B">战力</a></li>
+<li><a href="#%E7%BB%8F%E9%AA%8C">经验</a></li>
+<li><a href="#%E8%B4%A7%E5%B8%81">货币</a></li>
+<li><a href="#%E5%90%84%E8%81%8C%E4%B8%9A%E6%AF%95%E4%B8%9A%E6%AD%A6%E5%99%A8">各职业毕业武器</a></li>
+<li><a href="#%E5%AE%A0%E7%89%A9">宠物</a></li>
+<li><a href="#%E8%BD%AC%E7%94%9F">转生</a></li>
+<li><a href="#%E5%9D%90%E9%AA%91">坐骑</a>
+<ul>
+<li><a href="#%E5%9D%90%E9%AA%91%E8%BF%9B%E9%98%B6">坐骑进阶</a></li>
+</ul>
+</li>
+<li><a href="#%E8%A3%85%E5%A4%87">装备</a></li>
+<li><a href="#%E5%95%B0%E5%97%A6">啰嗦</a></li>
+<li><a href="#%E7%A7%B0%E5%8F%B7">称号</a></li>
+<li><a href="#0%E6%B0%AA">0氪</a></li>
+</ul>
+</li>
+</ul>
+
+          </aside> -->
+        
+      </div>
+    </div>
+    <div class="py-8 text-gray-300 text-center border-t border-gray-200">
+  Powered by Gridea
+</div>
+  </div>
+
+  <script src="//cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  
+  <script src="//cdn.jsdelivr.net/npm/@gridea/theme@1.0.8/js/main.js"></script>
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+    
+  
+</body>
+</html>

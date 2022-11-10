@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en" style="--theme-color: #262626; --link-color: #262626;">
+<head>
+  <meta charset="UTF-8">
+  <title>Markdown常用语法汇总 - My Blog</title>
+
+  <link rel="icon" href="">
+<!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> -->
+<link rel="alternate" type="application/atom+xml" title="My Blog - Atom Feed" href="https://98may2.xyz/atom.xml">
+
+  
+
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFCRR8Q57W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script> -->
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-182385326-1');
+    ga('set', 'dimension1', 'site/yE4bklzbb');
+    ga('set', 'dimension2', 'post/Jefd2Ntzm');
+    ga('send', 'pageview');
+    // gtag('set', {
+    //   'custom_map': {
+    //     'dimension1': 'siteId',
+    //     'dimension2': 'postId',
+    //   }
+    // })
+
+    // gtag('config', 'G-NFCRR8Q57W', {
+    //   'siteId': 'site/yE4bklzbb',
+    //   'postId': 'post/Jefd2Ntzm',
+    // });
+  </script>
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="记录">
+
+  <meta property="og:title" content="Markdown常用语法汇总 - My Blog">
+  <meta property="og:description" content="记录">
+  
+  <meta property="og:url" content="https://98may2.xyz/markdown-chang-yong-yu-fa-hui-zong/">
+  <meta property="og:site_name" content="My Blog">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Markdown常用语法汇总">
+
+  <meta name="gridea:post_id" content="Jefd2Ntzm">
+
+  <link rel="canonical" href="https://98may2.xyz/markdown-chang-yong-yu-fa-hui-zong">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.0.3/styles/a11y-light.css">
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@gridea/theme@1.0.8/css/main.css">
+
+</head>
+<body>
+  
+    
+  
+  <div id="page">
+    <div class="mb-16 sticky top-0 z-20 bg-white">
+  <header class="py-4 flex items-baseline justify-between max-w-2xl mx-auto px-2">
+    <h1 class="text-lg text-center font-medium px-4 md:px-0 flex items-center">
+      <div class="site-logo-text font-normal">M</div>
+      <a href="/">My Blog</a>
+    </h1>
+    <div class="hidden sm:flex justify-center">
+      
+        
+        <a
+          href="/about"
+          class="mx-2 text-base border-b border-transparent"
+          
+        >关于本站</a>
+        
+          <span class="text-gray-200">/</span>
+        
+      
+        
+        <a
+          href="/links"
+          class="mx-2 text-base border-b border-transparent"
+          
+        >链接</a>
+        
+      
+    </div>
+    <div class="flex sm:hidden py-2 px-4 text-center cursor-pointer" @click="openMenu = true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg>
+    </div>
+  </header>
+
+  <div class="fixed top-0 right-0 bottom-0 left-0 bg-white hidden" :style="{
+    display: openMenu ? 'block !important' : 'none',
+  }" v-if="openMenu">
+    <div class="py-4 px-2 flex justify-end" @click="openMenu = false">
+      <div class="flex py-2 px-4 text-center cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></svg>
+      </div>
+    </div>
+    <div class="flex flex-col p-4">
+      
+        
+        <a
+          href="/about"
+          class="mx-2 my-4 text-base border-b border-transparent"
+          
+        >关于本站</a>
+      
+        
+        <a
+          href="/links"
+          class="mx-2 my-4 text-base border-b border-transparent"
+          
+        >链接</a>
+      
+    </div>
+  </div>
+</div>
+    <div class="border-b border-gray-200">
+      <div class="max-w-2xl mx-auto px-6 md:px-2">
+        <div class="my-24 text-center">
+          <h1 class="text-2xl font-bold">Markdown常用语法汇总</h1>
+          <div class="post-title-bar mx-auto rounded mt-4"></div>
+          <div class="text-gray-400 mt-4">2022.10.08</div>
+          <div class="flex justify-center mt-4">
+            
+              <a href="https://98may2.xyz/tags/Markdown" class="inline-flex items-center mr-4 text-sm text-gray-600">
+                <span class="mr-1">#</span>Markdown
+              </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sticky-bar" class="w-full sticky top-0 z-10 bg-white" style="height: 64px;"></div>
+    <div class="p-4 md:p-16 bg-white">
+      <div class="max-w-2xl mx-auto px-4 flex relative">
+        <section class="post-content flex-1 default-post-content max-w-2xl">
+          <div v-pre>
+            <p>转载自知乎<a href="https://zhuanlan.zhihu.com/p/108984311">https://zhuanlan.zhihu.com/p/108984311</a></p>
+<p><ul class="markdownIt-TOC">
+<li><a href="#markdown%E6%A0%87%E9%A2%98">Markdown标题</a></li>
+<li><a href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98">一级标题</a>
+<ul>
+<li><a href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98">二级标题</a>
+<ul>
+<li><a href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98">三级标题</a>
+<ul>
+<li><a href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98">四级标题</a>
+<ul>
+<li><a href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98">五级标题</a>
+<ul>
+<li><a href="#%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98">六级标题</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E4%B8%89-markdown%E6%AE%B5%E8%90%BD">三、Markdown段落</a></li>
+<li><a href="#markdown-%E5%88%97%E8%A1%A8">Markdown 列表</a></li>
+<li><a href="#markdown%E5%8C%BA%E5%9D%97">Markdown区块</a></li>
+<li><a href="#markdown%E4%BB%A3%E7%A0%81%E6%A1%86">Markdown代码框</a></li>
+</ul>
+</p>
+<h1 id="markdown标题">Markdown标题</h1>
+<p>使用 # 号可表示 1-6 级标题，一级标题对应一个 # 号，二级标题对应两个 # 号，以此类推。</p>
+<p>使用#号标记标题语法格式：</p>
+<h1 id="一级标题">一级标题</h1>
+<h2 id="二级标题">二级标题</h2>
+<h3 id="三级标题">三级标题</h3>
+<h4 id="四级标题">四级标题</h4>
+<h5 id="五级标题">五级标题</h5>
+<h6 id="六级标题">六级标题</h6>
+<p>显示效果：</p>
+<p>一级标题</p>
+<p>二级标题</p>
+<p>三级标题</p>
+<p>四级标题</p>
+<p>五级标题</p>
+<p>六级标题</p>
+<hr>
+<h1 id="三-markdown段落">三、Markdown段落</h1>
+<p>Markdown的段落没有特殊的格式，直接编写文字就好，段落的换行号是使用两个以上的空格加回车。</p>
+<p>3.1 字体</p>
+<p>Markdown 可以使用以下几种字体：</p>
+<p>用1个星号<em>或底线_表示斜体<br>
+用2个星号</em>或底线_表示粗体<br>
+用3个星号*或底线_表示粗斜体<br>
+语法格式：</p>
+<p><em>斜体文字</em></p>
+<p><em>斜体文字</em></p>
+<p><strong>粗体文字</strong></p>
+<p><strong>粗体文字</strong></p>
+<p><em><strong>粗斜体文字</strong></em></p>
+<p><em><strong>粗斜体文字</strong></em><br>
+显示效果：</p>
+<p>斜体文字</p>
+<p>斜体文字</p>
+<p>粗体文字</p>
+<p>粗体文字</p>
+<p>粗斜体文字</p>
+<p>粗斜体文字</p>
+<p>3.2 分隔线</p>
+<p>可以在一行中用三个以上的星号*、减号-、底线_来建立一个分隔线，行内不能有其他东西，你也可以在星号或减号蹭插入空格。下面这种写法都可以建立分隔线：</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<p>显示效果：</p>
+<hr>
+<p>3.3 删除线</p>
+<p>如果段落上的文字要添加删除线，只需要在文字的两端加上两个波浪线~~即可。</p>
+<p>语法格式：</p>
+<p>baidu.com<br>
+sina.com<br>
+<s>tencent.com</s><br>
+显示效果如下：</p>
+<p>http://baidu.com http://sina.com <s>tencent.com</s></p>
+<p>3.4 下划线</p>
+<p>下划线可以通过HTML的标签来实现</p>
+<p><u>带下划线文本</u><br>
+显示效果如下：</p>
+<p>带下划线文本</p>
+<p>3.5 脚注</p>
+<p>脚注是对文本的补充说明。</p>
+<p>Markdown脚注的格式如下：</p>
+<p>[^要注明的文本]：<br>
+显示效果：</p>
+<hr>
+<h1 id="markdown-列表">Markdown 列表</h1>
+<p>4.1 有序列表和无序列表</p>
+<p>Markdown支持有序列表和无序列表，无序列表使用星号(*)、加号(+)或者减号(-)作为标记：</p>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项<br>
+显示效果：</li>
+</ul>
+<p>第一项<br>
+第二项<br>
+第三项<br>
+第一项<br>
+第二项<br>
+第三项<br>
+第一项<br>
+第二项<br>
+第三项<br>
+有序列表直接在文字有加上1. 2. 3. 来表示，符号和文字之间加上一个空格字符，如：</p>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项<br>
+第一项<br>
+第二项<br>
+第三项<br>
+4.2 列表嵌套</li>
+</ol>
+<p>列表嵌套只需在子列表的选项前添加四个空格即可：</p>
+<ol>
+<li>第一项：
+<ul>
+<li>第一项嵌套的第一个元素</li>
+<li>第一项嵌套的第二个元素</li>
+</ul>
+</li>
+<li>第二项：
+<ul>
+<li>第二项嵌套的第一个元素</li>
+<li>第二项嵌套的第二个元素<br>
+显示效果：</li>
+</ul>
+</li>
+</ol>
+<p>第一项：<br>
+第一项嵌套的第一个元素<br>
+第一项嵌套的第二个元素<br>
+第二项：<br>
+第二项嵌套的第一个元素<br>
+第二项嵌套的第二个元素</p>
+<hr>
+<h1 id="markdown区块">Markdown区块</h1>
+<p>Markdown区块引用是在段落开头使用&gt;符号，然后后面紧跟一个空格符号：</p>
+<blockquote>
+<p>区块引用<br>
+Markdown教程<br>
+学的不仅是技术更是梦想<br>
+显示效果如下：</p>
+</blockquote>
+<p>区块引用 Markdown教程 学的不仅是技术更是梦想<br>
+另外区块是可以嵌套的，一个&gt;符号是最外层，两个符号是第一层嵌套，以此类推：</p>
+<blockquote>
+<p>最外层</p>
+<blockquote>
+<p>第一层嵌套</p>
+<blockquote>
+<p>第二层嵌套</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>5.1 区块中使用列表</p>
+<p>区块中使用列表实例如下：</p>
+<blockquote>
+<p>区块中使用列表</p>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+</ol>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+</blockquote>
+<p>区块中使用列表 1. 第一项 2. 第二项 + 第一项 + 第二项 + 第三项<br>
+5.2 列表中使用区块</p>
+<p>如果要在列表项目内放进区块，那么就需要在&gt;前添加四个空格和缩进。</p>
+<ul>
+<li>第一项
+<blockquote>
+<p>Markdown教程<br>
+学的不仅是技术更是梦想</p>
+</blockquote>
+</li>
+<li>第二项<br>
+显示效果如下：</li>
+</ul>
+<p>第一项 &gt; Markdown教程 &gt; 学的不仅是技术更是梦想<br>
+第二项</p>
+<hr>
+<h1 id="markdown代码框">Markdown代码框</h1>
+<p>如果是段落上的一个函数或片段的代码可以用两个'把它包起来。</p>
+<p>'print()' 函数<br>
+'print()' 函数</p>
+<p>6.1 代码区块</p>
+<p>代码区块使用4个空格或者一个制表符（Tab键）。</p>
+<?Python
+    print('Markdown')
+    def test():
+        print('Markdown test!')
+也可以用'''包裹一段代码，并指定一种语言（也可以不指定）：
+
+'''javascript
+$(document).read(function(){
+    alert('Markdown');
+});
+'''
+显示效果：
+
+'''javascript
+$(document).read(function){
+    alert('Markdown');
+});
+'''
+
+-----
+
+# Markdown链接
+
+链接使用方法如下：
+
+[链接名称](链接地址)
+或者
+<链接地址>
+例如：
+
+这是一个链接 [新浪新闻](https://news.sina.com.cn/)
+<https://news.sina.com.cn/>
+显示效果如下：
+
+这是一个链接 新浪新闻
+
+https://news.sina.com.cn/
+
+7.1 高级链接
+
+链接也可以用变量来代替，文档末尾附带变量地址：
+这个链接用1作为网址变量[baidu][1]
+这个链接用markdown作为网址变量[Markdown][markdown]
+然后文档的结尾为变量赋值(网址)
+
+[1]: http://www.baidu.com
+[markdown]: http://www.markdown.com
+显示效果如下：
+
+链接也可以用变量来代替，文档末尾附带变量地址： 这个链接用1作为网址变量baidu 这个链接用markdown作为网址变量Markdown 然后文档的结尾为变量赋值(网址)
+
+-----
+
+# Markdown图片
+
+Markdown图片语法格式为：
+
+![alt 属性文本](图片地址)
+![alt 属性文本](图片地址 "可选标题")
+开头一个感叹号!
+接着一个方括号，里面放上图片的代替文字
+接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的'title'属性文字。
+实例如下：
+
+![有问题上知乎 图标](https://pic4.zhimg.com/80/v2-a47051e92cf74930bedd7469978e6c08_hd.png)
+
+---
+
+![通信人家园 图标](http://www.txrjy.com/static/image/common/logo.gif)
+显示效果如下：
+
+
+
+
+
+
+
+也可以像网址那样对图片使用变量：
+
+这个图片链接用1作为网址变量[zhihu][1]
+然后在文档的结尾为变量赋值（网址）
+[1]: (https://pic4.zhimg.com/80/v2-a47051e92cf74930bedd7469978e6c08_hd.png)
+显示效果如下：
+
+这个图片链接用1作为网址变量zhihu 然后在文档的结尾为变量赋值（网址）
+
+Markdown 没有办法指定图片的高度与宽度，如果需要的话，可以使用普通的
+
+
+标签。
+
+<img src=“https://pic4.zhimg.com/80/v2-a47051e92cf74930bedd7469978e6c08_hd.png” width=10%>
+显示效果：
+
+
+
+
+-----
+
+# Markdown表格
+
+Markdown制作表格使用|来分隔不同的单元格，使用-来分隔表头和其他行。
+
+语法格式：
+
+|表头1|表头2|
+|----|----|
+|单元格11|单元格12|
+|单元格21|单元格22|
+显示效果：
+
+| 表头1 | 表头2 | | -------- | -------- | | 单元格11 | 单元格12 | | 单元格21 | 单元格22 |
+
+9.1 对齐方式
+
+可以设置表头的对齐方式：
+
+-: 设置内容或标题栏右对齐
+:- 设置内容或标题栏左对齐
+:-: 设置内容或标题栏居中对齐
+语法格式：
+
+|左对齐|居中对齐|右对齐|
+|:----|:----:|----:|
+|单元格11|单元格12|单元格13|
+|单元格21|单元格22|单元格23|
+显示效果：
+
+| 左对齐 | 居中对齐 | 右对齐 | | :------- | :------: | -------: | | 单元格11 | 单元格12 | 单元格13 | | 单元格21 | 单元格22 | 单元格23 |
+
+-----
+
+# Markdown高级技巧
+
+支持的HTML元素
+
+不在Markdown涵盖范围之内的标签，都可以直接在文档里面用HTML撰写。
+
+目前支持的HTML元素有： 
+等 ，如：
+
+使用<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd>重启电脑
+显示效果如下：
+
+使用Ctrl+Alt+Del重启电脑
+
+10.1 转义
+
+Markdown使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown使用反斜杠转义特殊字符：
+
+**文本加粗**
+\*\*正常显示星号\*\*
+显示效果:
+
+文本加粗 **正常显示星号**
+
+Mrkdown支持以下这些符号前面加上反斜杠来帮助插入普通符号：
+
+\   反斜线
+`   反引号
+*   星号
+_   下划线
+{}  花括号
+[]  方括号
+()  小括号
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   感叹号
+10.2 数学公式
+
+当你需要在编辑器中插入数学公式时，可以使用两个美元符 $$ 包裹 TeX 或 LaTeX 格式的数学公式来实现。
+
+实例如下：
+
+$$
+\int_0^1 {x^2} \,{\rm d}x
+$$
+显示效果： $$ \int_0^1 {x^2} \,{\rm d}x $$
+          </div>
+          <div class="py-4 text-gray-600 flex items-center justify-between">
+            <div class="">
+              <div class="text-sm text-gray-300">最后更新于: </div>
+              <div class="text-base font-medium">2022.10.08</div>
+            </div>
+            <!-- <div class="flex items-center text-sm text-gray-600">
+              <i class="ri-eye-line"></i> <span class="ml-2">{{ views }}</span>
+            </div> -->
+          </div>
+          <div>
+            <div id="disqus_thread"></div>
+          </div>
+        </section>
+        
+          <!-- <aside class="sticky toc-container flex-shrink-0 hidden md:block">
+            <div class="text-gray-600 mb-4">目 录</div>
+            <ul class="markdownIt-TOC">
+<li><a href="#markdown%E6%A0%87%E9%A2%98">Markdown标题</a></li>
+<li><a href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98">一级标题</a>
+<ul>
+<li><a href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98">二级标题</a>
+<ul>
+<li><a href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98">三级标题</a>
+<ul>
+<li><a href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98">四级标题</a>
+<ul>
+<li><a href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98">五级标题</a>
+<ul>
+<li><a href="#%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98">六级标题</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E4%B8%89-markdown%E6%AE%B5%E8%90%BD">三、Markdown段落</a></li>
+<li><a href="#markdown-%E5%88%97%E8%A1%A8">Markdown 列表</a></li>
+<li><a href="#markdown%E5%8C%BA%E5%9D%97">Markdown区块</a></li>
+<li><a href="#markdown%E4%BB%A3%E7%A0%81%E6%A1%86">Markdown代码框</a></li>
+</ul>
+
+          </aside> -->
+        
+      </div>
+    </div>
+    <div class="py-8 text-gray-300 text-center border-t border-gray-200">
+  Powered by Gridea
+</div>
+  </div>
+
+  <script src="//cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  
+  <script src="//cdn.jsdelivr.net/npm/@gridea/theme@1.0.8/js/main.js"></script>
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+    
+  
+</body>
+</html>

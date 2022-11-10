@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" style="--theme-color: #262626; --link-color: #262626;">
+<head>
+  <meta charset="UTF-8">
+  <title>黑苹果 - My Blog</title>
+
+  <link rel="icon" href="">
+<!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> -->
+<link rel="alternate" type="application/atom+xml" title="My Blog - Atom Feed" href="https://98may2.xyz/atom.xml">
+
+  
+
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFCRR8Q57W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script> -->
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-182385326-1');
+    ga('set', 'dimension1', 'site/yE4bklzbb');
+    ga('set', 'dimension2', 'post/SMEaUbVIV');
+    ga('send', 'pageview');
+    // gtag('set', {
+    //   'custom_map': {
+    //     'dimension1': 'siteId',
+    //     'dimension2': 'postId',
+    //   }
+    // })
+
+    // gtag('config', 'G-NFCRR8Q57W', {
+    //   'siteId': 'site/yE4bklzbb',
+    //   'postId': 'post/SMEaUbVIV',
+    // });
+  </script>
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="记录一下">
+
+  <meta property="og:title" content="黑苹果 - My Blog">
+  <meta property="og:description" content="记录一下">
+  
+  <meta property="og:url" content="https://98may2.xyz/hei-ping-guo/">
+  <meta property="og:site_name" content="My Blog">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="黑苹果">
+
+  <meta name="gridea:post_id" content="SMEaUbVIV">
+
+  <link rel="canonical" href="https://98may2.xyz/hei-ping-guo">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.0.3/styles/a11y-light.css">
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@gridea/theme@1.0.8/css/main.css">
+
+</head>
+<body>
+  
+    
+  
+  <div id="page">
+    <div class="mb-16 sticky top-0 z-20 bg-white">
+  <header class="py-4 flex items-baseline justify-between max-w-2xl mx-auto px-2">
+    <h1 class="text-lg text-center font-medium px-4 md:px-0 flex items-center">
+      <div class="site-logo-text font-normal">M</div>
+      <a href="/">My Blog</a>
+    </h1>
+    <div class="hidden sm:flex justify-center">
+      
+        
+        <a
+          href="/about"
+          class="mx-2 text-base border-b border-transparent"
+          
+        >关于本站</a>
+        
+          <span class="text-gray-200">/</span>
+        
+      
+        
+        <a
+          href="/links"
+          class="mx-2 text-base border-b border-transparent"
+          
+        >链接</a>
+        
+      
+    </div>
+    <div class="flex sm:hidden py-2 px-4 text-center cursor-pointer" @click="openMenu = true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg>
+    </div>
+  </header>
+
+  <div class="fixed top-0 right-0 bottom-0 left-0 bg-white hidden" :style="{
+    display: openMenu ? 'block !important' : 'none',
+  }" v-if="openMenu">
+    <div class="py-4 px-2 flex justify-end" @click="openMenu = false">
+      <div class="flex py-2 px-4 text-center cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></svg>
+      </div>
+    </div>
+    <div class="flex flex-col p-4">
+      
+        
+        <a
+          href="/about"
+          class="mx-2 my-4 text-base border-b border-transparent"
+          
+        >关于本站</a>
+      
+        
+        <a
+          href="/links"
+          class="mx-2 my-4 text-base border-b border-transparent"
+          
+        >链接</a>
+      
+    </div>
+  </div>
+</div>
+    <div class="border-b border-gray-200">
+      <div class="max-w-2xl mx-auto px-6 md:px-2">
+        <div class="my-24 text-center">
+          <h1 class="text-2xl font-bold">黑苹果</h1>
+          <div class="post-title-bar mx-auto rounded mt-4"></div>
+          <div class="text-gray-400 mt-4">2022.10.08</div>
+          <div class="flex justify-center mt-4">
+            
+              <a href="https://98may2.xyz/tags/MacOS" class="inline-flex items-center mr-4 text-sm text-gray-600">
+                <span class="mr-1">#</span>MacOS
+              </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sticky-bar" class="w-full sticky top-0 z-10 bg-white" style="height: 64px;"></div>
+    <div class="p-4 md:p-16 bg-white">
+      <div class="max-w-2xl mx-auto px-4 flex relative">
+        <section class="post-content flex-1 default-post-content max-w-2xl">
+          <div v-pre>
+            <p><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E7%BD%91%E5%8D%A1%E4%B8%8E%E8%93%9D%E7%89%99">网卡与蓝牙</a></li>
+<li><a href="#app-store%E6%97%A0%E6%B3%95%E7%99%BB%E9%99%86">App Store无法登陆</a></li>
+<li><a href="#%E4%BD%BF%E7%B3%BB%E7%BB%9F%E5%8F%98%E5%BE%97%E6%9B%B4%E5%A5%BD%E7%9A%84%E8%AE%BE%E7%BD%AE">使系统变得更好的设置</a>
+<ul>
+<li><a href="#%E8%AE%BE%E7%BD%AE%E5%90%AF%E5%8A%A8%E5%8F%B0%E5%9B%BE%E6%A0%87%E6%95%B0%E9%87%8F">设置启动台图标数量</a></li>
+<li><a href="#%E6%81%A2%E5%A4%8D%E5%90%AF%E5%8A%A8%E5%8F%B0%E7%9A%84%E9%BB%98%E8%AE%A4%E6%95%B0%E9%87%8F">恢复启动台的默认数量</a></li>
+<li><a href="#%E5%87%8F%E5%B0%91%E7%A8%8B%E5%BA%8F%E5%9D%9E%E7%9A%84%E5%93%8D%E5%BA%94%E6%97%B6%E9%97%B4">减少程序坞的响应时间</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BD%BF%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6">使用的软件</a></li>
+<li><a href="#%E6%88%91%E7%9A%84%E9%BB%91%E8%8B%B9%E6%9E%9C%E8%AE%BE%E5%A4%87">我的黑苹果设备</a></li>
+<li><a href="#usb%E5%AE%9A%E5%88%B6">USB定制</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85%E4%B8%8E%E8%87%AA%E5%B7%B1%E5%94%AE%E5%90%8E">安装与（自己）售后</a></li>
+<li><a href="#%E5%95%B0%E9%87%8C%E5%95%B0%E5%97%A6">啰里啰嗦</a></li>
+<li><a href="#%E5%8F%82%E8%80%83%E7%BD%91%E7%AB%99">参考网站</a></li>
+<li><a href="#%E4%B8%80%E4%BA%9B%E5%BC%95%E7%94%A8%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E5%9C%B0%E6%96%B9">一些引用&amp;需要注意的地方</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<h2 id="网卡与蓝牙">网卡与蓝牙</h2>
+<p><a href="https://heipg.cn/tutorial/wifi-bluetooth-card-for-hackintosh.html">黑苹果无线网卡购买&amp;安装&amp;使用指南2022年版-黑苹果星球</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/339648390">Hackintosh黑苹果无线网卡入手指南（PCIE篇）</a></p>
+<h2 id="app-store无法登陆">App Store无法登陆</h2>
+<blockquote>
+<p><a href="https://blog.csdn.net/jianglibo1024/article/details/62418204">MacOS无法登录App Store修复</a></p>
+</blockquote>
+<p>网络不是en0，只删除了这篇文章最后提到的那个文件，然后重启就解决了</p>
+<p>安装有线网卡和蓝牙的话，不需要动这个，只要驱动弄得好就行了</p>
+<h2 id="使系统变得更好的设置">使系统变得更好的设置</h2>
+<blockquote>
+<p>转自国光<a href="https://www.sqlsec.com/2022/01/monterey.html">https://www.sqlsec.com/2022/01/monterey.html</a></p>
+</blockquote>
+<h3 id="设置启动台图标数量">设置启动台图标数量</h3>
+<p>[tip type=&quot;blue&quot;]设置列数为 10[/tip]</p>
+<p><code>defaults write com.apple.dock springboard-columns -int 10</code></p>
+<p>[tip type=&quot;blue&quot;]设置行数为 5[/tip]</p>
+<p><code>defaults write com.apple.dock springboard-rows -int 5</code></p>
+<p>[tip type=&quot;blue&quot;]重启 Dock 生效[/tip]</p>
+<p><code>killall Dock</code></p>
+<h3 id="恢复启动台的默认数量">恢复启动台的默认数量</h3>
+<p>[tip type=&quot;blue&quot;]恢复默认的列数和行数[/tip]</p>
+<pre><code>defaults write com.apple.dock springboard-rows Default
+defaults write com.apple.dock springboard-columns Default
+</code></pre>
+<p>[tip type=&quot;blue&quot;]重启 Dock 生效[/tip]</p>
+<p><code>killall Dock</code></p>
+<h3 id="减少程序坞的响应时间">减少程序坞的响应时间</h3>
+<p>[tip type=&quot;blue&quot;]设置启动坞动画时间设置为 0.5 秒[/tip]</p>
+<p><code>defaults write com.apple.dock autohide-time-modifier -float 0.5 &amp;&amp; killall Dock</code></p>
+<p>[tip type=&quot;blue&quot;]设置启动坞响应时间最短[/tip]</p>
+<p><code>defaults write com.apple.dock autohide-delay -int 0 &amp;&amp; killall Dock</code></p>
+<p>[tip type=&quot;blue&quot;]恢复启动坞默认动画时间[/tip]</p>
+<p><code>defaults delete com.apple.dock autohide-time-modifier &amp;&amp; killall Dock</code></p>
+<p>[tip type=&quot;blue&quot;]恢复默认启动坞响应时间[/tip]</p>
+<p><code>defaults delete com.apple.Dock autohide-delay &amp;&amp; killall Dock</code></p>
+<h2 id="使用的软件">使用的软件</h2>
+<p>Clover Configurator</p>
+<p><code>四叶草引导efi专用的编辑软件</code></p>
+<p>Hackintool</p>
+<p><code>定制USB软件</code></p>
+<h2 id="我的黑苹果设备">我的黑苹果设备</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">配件</th>
+<th style="text-align:center">型号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">系统版本</td>
+<td style="text-align:center">Big Sur 11.6.6</td>
+</tr>
+<tr>
+<td style="text-align:center">CPU</td>
+<td style="text-align:center">i3-8100 3.6GHz 四核</td>
+</tr>
+<tr>
+<td style="text-align:center">主板</td>
+<td style="text-align:center">七彩虹（Colorful）战斧C.B360M-PLUS V20<sup class="footnote-ref"><a href="#fn1" id="fnref1">1</a></sup></td>
+</tr>
+<tr>
+<td style="text-align:center">显卡</td>
+<td style="text-align:center">GT 710 1G<sup class="footnote-ref"><a href="#fn2" id="fnref2">2</a></sup></td>
+</tr>
+<tr>
+<td style="text-align:center">内存</td>
+<td style="text-align:center">DDR4 8G 2133MHz</td>
+</tr>
+<tr>
+<td style="text-align:center">硬盘</td>
+<td style="text-align:center">Samsung SSD 860 EVO 250GB<sup class="footnote-ref"><a href="#fn3" id="fnref3">3</a></sup></td>
+</tr>
+<tr>
+<td style="text-align:center">音响</td>
+<td style="text-align:center">USB木质音响<sup class="footnote-ref"><a href="#fn4" id="fnref4">4</a></sup></td>
+</tr>
+<tr>
+<td style="text-align:center">网卡</td>
+<td style="text-align:center">BCM943224PCIEBT2<code>带蓝牙</code></td>
+</tr>
+<tr>
+<td style="text-align:center">EFI</td>
+<td style="text-align:center"><a href="https://github.com/1998-May2/EFI">GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="usb定制">USB定制</h2>
+<p><sup class="footnote-ref"><a href="#fn5" id="fnref5">5</a></sup></p>
+<p><code>机箱前板USB</code><br>
+USB②｜USB①｜启动电脑｜耳机插口｜麦克风插口</p>
+<p><code>主板自带挡板上方USB</code><br>
+USB③｜USB④｜P2/O插口</p>
+<p><code>主板自带挡板下方USB</code><br>
+USB⑦｜USB⑧	<br>
+USB⑤｜USB⑥｜网线插口</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">USB定制</th>
+<th style="text-align:center">对应</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">USB2</td>
+<td style="text-align:center">2.0</td>
+</tr>
+<tr>
+<td style="text-align:center">USB3</td>
+<td style="text-align:center">3.0～3.2</td>
+</tr>
+<tr>
+<td style="text-align:center">TypeC+Sw</td>
+<td style="text-align:center">未知</td>
+</tr>
+<tr>
+<td style="text-align:center">TypeC</td>
+<td style="text-align:center">C口？</td>
+</tr>
+<tr>
+<td style="text-align:center">Internal</td>
+<td style="text-align:center">内建，适合蓝牙、鼠标、键盘使用</td>
+</tr>
+</tbody>
+</table>
+<p><code>TypeC和USB3都会占用一个HS和一个SS，相当于占用两条协议，没有特别需求可以设置成USB2，总共只能有15个USB协议</code></p>
+<p><code>HS是2.0，SS是3.0</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">USB</th>
+<th style="text-align:center">对应名称</th>
+<th style="text-align:center">备注</th>
+<th style="text-align:center">接口协议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">USB①</td>
+<td style="text-align:center">HS01</td>
+<td style="text-align:center">接近开关键的USB</td>
+<td style="text-align:center">3.0</td>
+</tr>
+<tr>
+<td style="text-align:center">USB②</td>
+<td style="text-align:center">HS08</td>
+<td style="text-align:center">远离开关键的USB</td>
+<td style="text-align:center">3.0</td>
+</tr>
+<tr>
+<td style="text-align:center">USB③</td>
+<td style="text-align:center">HS14</td>
+<td style="text-align:center">主板最左上角的USB</td>
+<td style="text-align:center">2.0</td>
+</tr>
+<tr>
+<td style="text-align:center">USB④</td>
+<td style="text-align:center">HS04</td>
+<td style="text-align:center">主板最左上角旁边的USB</td>
+<td style="text-align:center">2.0</td>
+</tr>
+<tr>
+<td style="text-align:center">USB⑤</td>
+<td style="text-align:center">HS07</td>
+<td style="text-align:center">网线往左数第二个USB</td>
+<td style="text-align:center">3.0</td>
+</tr>
+<tr>
+<td style="text-align:center">USB⑥</td>
+<td style="text-align:center">HS05</td>
+<td style="text-align:center">网线隔壁的USB</td>
+<td style="text-align:center">3.0</td>
+</tr>
+<tr>
+<td style="text-align:center">USB⑦</td>
+<td style="text-align:center">HS06</td>
+<td style="text-align:center">网线左上靠左边的USB</td>
+<td style="text-align:center">3.1</td>
+</tr>
+<tr>
+<td style="text-align:center">USB⑧</td>
+<td style="text-align:center">HS02</td>
+<td style="text-align:center">网线左上的USB</td>
+<td style="text-align:center">3.1</td>
+</tr>
+<tr>
+<td style="text-align:center">未知</td>
+<td style="text-align:center">HS10</td>
+<td style="text-align:center">盲猜网卡或者蓝牙</td>
+<td style="text-align:center">未知</td>
+</tr>
+</tbody>
+</table>
+<h2 id="安装与自己售后">安装与（自己）售后</h2>
+<p>安装黑苹果使用的是小聪的黑苹果安装工具👉<a href="http://www.ccmacos.cn">CCMac</a></p>
+<p>使用的是3.0版本，EFI是从软件里百家饭找的，把里面自带的X99主板kext，换成了适合300系列的主板kext</p>
+<p>安装的时候其实也很简单，有个分区需要自己动手一下，不然可能容量不够用</p>
+<p>USB定制我忘了该怎么搞了，有空再去看一眼教程</p>
+<p>显卡的话，710是可以用的，没啥大问题，暂时也不打算升12版本了……好像Bug还很多</p>
+<p>三码我也还没搞好，等到时候一起看个教程</p>
+<p>主要是有些教程，看了没记下来就会忘记，导致我好多都给忘掉了，只能慢慢补充知识</p>
+<p>希望这次能折腾久一点！</p>
+<h2 id="啰里啰嗦">啰里啰嗦</h2>
+<p>要记得备份要记得备份！！！惨痛的教训，这已经是第三次了！！！我怎么就一直忘记备份呢！哎！算了！</p>
+<h2 id="参考网站">参考网站</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">备注</th>
+<th style="text-align:center">ID</th>
+<th style="text-align:center">网址</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">教程</td>
+<td style="text-align:center">阿雷科技</td>
+<td style="text-align:center"><a href="https://www.youtube.com/channel/UCiLtBk8dChPldOho8uTZHhQ/">https://www.youtube.com/channel/UCiLtBk8dChPldOho8uTZHhQ/</a></td>
+</tr>
+<tr>
+<td style="text-align:center">一键安装软件</td>
+<td style="text-align:center">CCMac</td>
+<td style="text-align:center"><a href="http://ccmacos.cn/">http://ccmacos.cn/</a></td>
+</tr>
+<tr>
+<td style="text-align:center">软件开发者</td>
+<td style="text-align:center">嘿我叫聪聪</td>
+<td style="text-align:center"><a href="https://space.bilibili.com/383999255">https://space.bilibili.com/383999255</a></td>
+</tr>
+<tr>
+<td style="text-align:center">镜像软件等</td>
+<td style="text-align:center">黑苹果社区</td>
+<td style="text-align:center"><a href="https://osx.cx">https://osx.cx</a></td>
+</tr>
+<tr>
+<td style="text-align:center">个人UP</td>
+<td style="text-align:center">大头蔡Cass</td>
+<td style="text-align:center"><a href="https://space.bilibili.com/16323318">https://space.bilibili.com/16323318</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="一些引用需要注意的地方">一些引用&amp;需要注意的地方</h2>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+
+<li id="fn1" class="footnote-item">
+
+<a href="#fnref1">1</a><p>最好选大厂的，微星、华硕什么的</p>
+</li>
+
+<li id="fn2" class="footnote-item">
+
+<a href="#fnref2">2</a><p>大部分AMD显卡都可以免驱，少数inter显卡支持免驱，10系显卡最多支持到1060（疑似）1050Ti安装驱动可以装10.5版本</p>
+</li>
+
+<li id="fn3" class="footnote-item">
+
+<a href="#fnref3">3</a><p>有些三星硬盘并不支持安装黑苹果，安装前记得先查一下是否支持安装黑苹果</p>
+</li>
+
+<li id="fn4" class="footnote-item">
+
+<a href="#fnref4">4</a><p>音响买的是USB+音频线，上面的旋转按钮是调控音量，十分方便！<img src="https://static.gridea.dev/344786792622326356/WaG5leDYa.jpeg" alt="音响图片" loading="lazy"></p>
+</li>
+
+<li id="fn5" class="footnote-item">
+
+<a href="#fnref5">5</a><p>我这个主板的USB定制差不多就这样<img src="https://static.gridea.dev/344786792622326356/qEUvvmZct.png" alt="USB定制" loading="lazy"></p>
+</li>
+</ol>
+</section>
+
+          </div>
+          <div class="py-4 text-gray-600 flex items-center justify-between">
+            <div class="">
+              <div class="text-sm text-gray-300">最后更新于: </div>
+              <div class="text-base font-medium">2022.10.10</div>
+            </div>
+            <!-- <div class="flex items-center text-sm text-gray-600">
+              <i class="ri-eye-line"></i> <span class="ml-2">{{ views }}</span>
+            </div> -->
+          </div>
+          <div>
+            <div id="disqus_thread"></div>
+          </div>
+        </section>
+        
+          <!-- <aside class="sticky toc-container flex-shrink-0 hidden md:block">
+            <div class="text-gray-600 mb-4">目 录</div>
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E7%BD%91%E5%8D%A1%E4%B8%8E%E8%93%9D%E7%89%99">网卡与蓝牙</a></li>
+<li><a href="#app-store%E6%97%A0%E6%B3%95%E7%99%BB%E9%99%86">App Store无法登陆</a></li>
+<li><a href="#%E4%BD%BF%E7%B3%BB%E7%BB%9F%E5%8F%98%E5%BE%97%E6%9B%B4%E5%A5%BD%E7%9A%84%E8%AE%BE%E7%BD%AE">使系统变得更好的设置</a>
+<ul>
+<li><a href="#%E8%AE%BE%E7%BD%AE%E5%90%AF%E5%8A%A8%E5%8F%B0%E5%9B%BE%E6%A0%87%E6%95%B0%E9%87%8F">设置启动台图标数量</a></li>
+<li><a href="#%E6%81%A2%E5%A4%8D%E5%90%AF%E5%8A%A8%E5%8F%B0%E7%9A%84%E9%BB%98%E8%AE%A4%E6%95%B0%E9%87%8F">恢复启动台的默认数量</a></li>
+<li><a href="#%E5%87%8F%E5%B0%91%E7%A8%8B%E5%BA%8F%E5%9D%9E%E7%9A%84%E5%93%8D%E5%BA%94%E6%97%B6%E9%97%B4">减少程序坞的响应时间</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BD%BF%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6">使用的软件</a></li>
+<li><a href="#%E6%88%91%E7%9A%84%E9%BB%91%E8%8B%B9%E6%9E%9C%E8%AE%BE%E5%A4%87">我的黑苹果设备</a></li>
+<li><a href="#usb%E5%AE%9A%E5%88%B6">USB定制</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85%E4%B8%8E%E8%87%AA%E5%B7%B1%E5%94%AE%E5%90%8E">安装与（自己）售后</a></li>
+<li><a href="#%E5%95%B0%E9%87%8C%E5%95%B0%E5%97%A6">啰里啰嗦</a></li>
+<li><a href="#%E5%8F%82%E8%80%83%E7%BD%91%E7%AB%99">参考网站</a></li>
+<li><a href="#%E4%B8%80%E4%BA%9B%E5%BC%95%E7%94%A8%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E5%9C%B0%E6%96%B9">一些引用&amp;需要注意的地方</a></li>
+</ul>
+</li>
+</ul>
+
+          </aside> -->
+        
+      </div>
+    </div>
+    <div class="py-8 text-gray-300 text-center border-t border-gray-200">
+  Powered by Gridea
+</div>
+  </div>
+
+  <script src="//cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  
+  <script src="//cdn.jsdelivr.net/npm/@gridea/theme@1.0.8/js/main.js"></script>
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+    
+  
+</body>
+</html>
